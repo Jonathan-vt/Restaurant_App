@@ -15,12 +15,12 @@ class LoginActivity : AppCompatActivity() {
     {
         val loginAcentral = Intent(this, CentralmenuActivity::class.java)
         startActivity(loginAcentral)
-        Toast.makeText(this, "Inicia sesion o Registrate", Toast.LENGTH_LONG).show()
+        Toast.makeText(this, "Inicio exitoso", Toast.LENGTH_LONG).show()
     }
     fun loginAregister(View: View)
     {
-        val loginAregister = Intent(this, CentralmenuActivity::class.java)
+        val loginAregister = Intent(this, RegisterActivity::class.java)
         startActivity(loginAregister)
-        Toast.makeText(this, "Inicia sesion o Registrate", Toast.LENGTH_LONG).show()
+        Toast.makeText(this, "completa los datos", Toast.LENGTH_LONG).show()
     }
 }

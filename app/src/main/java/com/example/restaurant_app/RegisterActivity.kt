@@ -11,10 +11,10 @@ class RegisterActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_register)
     }
-    fun registroAcentral(View: View)
+    fun registroAlogin(View: View)
     {
-        val registroAcentral = Intent(this, CentralmenuActivity::class.java)
-        startActivity(registroAcentral)
-        Toast.makeText(this, "Inicia sesion o Registrate", Toast.LENGTH_LONG).show()
+        val registroAlogin = Intent(this, LoginActivity::class.java)
+        startActivity(registroAlogin)
+        Toast.makeText(this, "Inicia sesion", Toast.LENGTH_LONG).show()
     }
 }
