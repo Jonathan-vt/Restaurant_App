@@ -3,9 +3,9 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:gravity="center"
     android:background="@drawable/fondo"
-    android:onClick="ingresar"
+    android:gravity="center"
+    android:onClick="irAlogin"
     android:orientation="vertical"
     tools:context=".MainActivity">
 
@@ -20,7 +20,7 @@
             android:layout_width="300dp"
             android:layout_height="200dp"
             android:layout_margin="5dp"
-            android:src="@drawable/icono_circular_512" />
+            android:src="@drawable/logo_restaurante_reWhiter" />
     </LinearLayout>
 
     <LinearLayout

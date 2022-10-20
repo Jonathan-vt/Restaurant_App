@@ -12,10 +12,10 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
     }
-    fun ingresar(View:View)
+    fun irAlogin(View:View)
     {
-            val i = Intent(this, LoginActivity::class.java)
-            startActivity(i)
+            val irAlogin = Intent(this, LoginActivity::class.java)
+            startActivity(irAlogin)
             Toast.makeText(this, "Inicia sesion o Registrate", Toast.LENGTH_LONG).show()
     }
 
