@@ -5,10 +5,10 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/old_book_open"
+    android:background="@drawable/write_in_book"
     android:gravity="center"
     android:orientation="vertical"
-    tools:context=".LoginActivity">
+    tools:context=".RegisterActivity">
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -40,6 +40,7 @@
             android:layout_margin="50dp"
             android:layout_weight="1"
             android:gravity="center"
+            android:onClick="registroAcentral"
             android:orientation="vertical">
 
             <EditText
@@ -52,6 +53,15 @@
                 android:textColorHint="#E68787" />
 
             <EditText
+                android:id="@+id/correoTxt"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:hint="Correo"
+                android:minHeight="48dp"
+                android:textColorHint="#FB6F6F" />
+
+            <EditText
                 android:id="@+id/passwordTxt"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
@@ -61,19 +71,11 @@
                 android:textColorHint="#E68787" />
 
             <Button
-                android:id="@+id/btnLogin"
-                android:layout_width="150dp"
-                android:layout_height="wrap_content"
-                android:onClick="loginAcentral"
-                android:text="Inicio" />
-
-            <Button
                 android:id="@+id/btnRegister"
                 android:layout_width="150dp"
                 android:layout_height="wrap_content"
-                android:onClick="loginAregister"
+                android:onClick="registroAcentral"
                 android:text="Registrarse" />
-
 
 
         </LinearLayout>

@@ -11,10 +11,16 @@ class LoginActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_login)
     }
-    fun irAcentral(View: View)
+    fun loginAcentral(View: View)
     {
-        val irAcentral = Intent(this, CentralmenuActivity::class.java)
-        startActivity(irAcentral)
+        val loginAcentral = Intent(this, CentralmenuActivity::class.java)
+        startActivity(loginAcentral)
+        Toast.makeText(this, "Inicia sesion o Registrate", Toast.LENGTH_LONG).show()
+    }
+    fun loginAregister(View: View)
+    {
+        val loginAregister = Intent(this, CentralmenuActivity::class.java)
+        startActivity(loginAregister)
         Toast.makeText(this, "Inicia sesion o Registrate", Toast.LENGTH_LONG).show()
     }
 }
