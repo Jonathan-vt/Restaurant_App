@@ -1,3 +1,10 @@
 <resources>
-    <string name="app_name">Restaurant_App</string>
+    <string name="app_name">Restaurant App</string>
+    <string name="view_txt_user">User</string>
+    <string name="edit_user">Enter The User</string>
+    <string name="view_txt_password">Password</string>
+    <string name="edit_password">Enter The Password</string>
+    <string name="btn_login">Login</string>
+    <string name="Alrt_Title">Error</string>
+    <string name="Alrt_mesege">Incorrect data</string>
 </resources>

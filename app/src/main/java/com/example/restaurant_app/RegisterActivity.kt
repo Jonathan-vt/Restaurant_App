@@ -13,8 +13,8 @@ class RegisterActivity : AppCompatActivity() {
     }
     fun registroAlogin(View: View)
     {
-        val registroAlogin = Intent(this, LoginActivity::class.java)
-        startActivity(registroAlogin)
+        val intentoAlogin = Intent(this, LoginActivity::class.java)
+        startActivity(intentoAlogin)
         Toast.makeText(this, "Inicia sesion", Toast.LENGTH_LONG).show()
     }
 }

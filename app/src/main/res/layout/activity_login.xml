@@ -43,22 +43,22 @@
             android:orientation="vertical">
 
             <EditText
-                android:id="@+id/userTxt"
+                android:id="@+id/edit_inicio_user"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:gravity="center"
                 android:hint="Usuario"
                 android:minHeight="48dp"
-                android:textColorHint="#E68787" />
+                android:textColorHint="@color/teal_700" />
 
             <EditText
-                android:id="@+id/passwordTxt"
+                android:id="@+id/edit_inicio_password"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:gravity="center"
                 android:hint="Contraseña"
                 android:minHeight="48dp"
-                android:textColorHint="#E68787" />
+                android:textColorHint="@color/teal_700" />
 
             <Button
                 android:id="@+id/btnLogin"

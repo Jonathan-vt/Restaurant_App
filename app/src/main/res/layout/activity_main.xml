@@ -19,8 +19,8 @@
         <ImageView
             android:layout_width="300dp"
             android:layout_height="200dp"
-            android:layout_margin="5dp"
-            android:src="@drawable/logo_restaurante_rewhiter" />
+            android:src="@drawable/logo_restaurante_reWhiter"
+            android:layout_margin="5dp"/>
     </LinearLayout>
 
     <LinearLayout
