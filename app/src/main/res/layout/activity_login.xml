@@ -43,36 +43,36 @@
             android:orientation="vertical">
 
             <EditText
-                android:id="@+id/userTxt"
+                android:id="@+id/edit_inicio_user"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:gravity="center"
-                android:hint="Usuario"
                 android:minHeight="48dp"
-                android:textColorHint="#E68787" />
+                android:hint="@string/language_user"
+                android:textColorHint="@color/teal_700" />
 
             <EditText
-                android:id="@+id/passwordTxt"
+                android:id="@+id/edit_inicio_password"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:gravity="center"
-                android:hint="Contraseña"
+                android:hint="@string/language_password"
                 android:minHeight="48dp"
-                android:textColorHint="#E68787" />
+                android:textColorHint="@color/teal_700" />
 
             <Button
                 android:id="@+id/btnLogin"
                 android:layout_width="150dp"
                 android:layout_height="wrap_content"
                 android:onClick="loginAcentral"
-                android:text="Inicio" />
+                android:text="@string/language_login" />
 
             <Button
                 android:id="@+id/btnRegister"
                 android:layout_width="150dp"
                 android:layout_height="wrap_content"
                 android:onClick="loginAregister"
-                android:text="Registrarse" />
+                android:text="@string/language_sign_in" />
 
 
 

@@ -14,8 +14,8 @@ class MainActivity : AppCompatActivity() {
     }
     fun irAlogin(View:View)
     {
-            val irAlogin = Intent(this, LoginActivity::class.java)
-            startActivity(irAlogin)
+            val intentoAlogin = Intent(this, LoginActivity::class.java)
+            startActivity(intentoAlogin)
             Toast.makeText(this, "Inicia sesion o Registrate", Toast.LENGTH_LONG).show()
     }
 

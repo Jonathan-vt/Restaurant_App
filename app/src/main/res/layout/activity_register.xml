@@ -29,15 +29,15 @@
 
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="0dp"
+        android:layout_height="192dp"
         android:layout_margin="5dp"
         android:layout_weight="2"
         android:baselineAligned="false"
         android:orientation="horizontal">
 
         <LinearLayout
-            android:layout_width="339dp"
-            android:layout_height="match_parent"
+            android:layout_width="320dp"
+            android:layout_height="316dp"
             android:layout_margin="50dp"
             android:layout_weight="1"
             android:gravity="center"
@@ -51,7 +51,7 @@
                 android:gravity="center"
                 android:hint="Usuario"
                 android:minHeight="48dp"
-                android:textColorHint="#E68787" />
+                android:textColorHint="@color/material_dynamic_neutral40" />
 
             <EditText
                 android:id="@+id/correoTxt"
@@ -60,16 +60,25 @@
                 android:gravity="center"
                 android:hint="Correo"
                 android:minHeight="48dp"
-                android:textColorHint="#FB6F6F" />
+                android:textColorHint="@color/material_dynamic_neutral40" />
 
             <EditText
-                android:id="@+id/passwordTxt"
+                android:id="@+id/edit_txt_password"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:gravity="center"
                 android:hint="Contraseña"
                 android:minHeight="48dp"
-                android:textColorHint="#E68787" />
+                android:textColorHint="@color/material_dynamic_neutral40" />
+
+            <EditText
+                android:id="@+id/edit_txt_password_confir"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:hint="confirmar Contraseña"
+                android:minHeight="48dp"
+                android:textColorHint="@color/material_dynamic_neutral_variant40" />
 
             <Button
                 android:id="@+id/btnRegister"

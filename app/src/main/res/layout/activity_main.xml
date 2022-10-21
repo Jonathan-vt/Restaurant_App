@@ -1,5 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
@@ -17,29 +19,39 @@
         android:gravity="center">
 
         <ImageView
-            android:layout_width="300dp"
-            android:layout_height="200dp"
-            android:layout_margin="5dp"
-            android:src="@drawable/logo_restaurante_rewhiter" />
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:src="@drawable/logo_restaurant_rewhiter"
+            android:layout_margin="10dp"/>
     </LinearLayout>
 
     <LinearLayout
-        android:id="@+id/touch"
         android:layout_width="match_parent"
         android:layout_height="0dp"
+        android:gravity="center"
         android:layout_margin="10dp"
         android:layout_weight="1"
-        android:orientation="horizontal">
+        android:orientation="vertical">
 
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="match_parent"
-            android:layout_margin="5dp"
+            android:layout_margin="10dp"
+            android:layout_weight="1"
             android:gravity="center"
-            android:text="Preciona para avanzar"
-            android:textColor="#E877C3"
-            android:textSize="40sp"
-            tools:ignore="HardcodedText" />
+            android:text="@string/language_welcome"
+            android:textColor="?android:attr/colorActivatedHighlight"
+            android:textSize="50sp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_weight="1"
+            android:layout_height="match_parent"
+            android:layout_margin="10dp"
+            android:gravity="center"
+            android:text="@string/language_touch_advance"
+            android:textColor="@android:color/secondary_text_dark"
+            android:textSize="30sp" />
     </LinearLayout>
 
 

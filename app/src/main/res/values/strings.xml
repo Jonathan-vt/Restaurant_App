@@ -1,3 +1,13 @@
 <resources>
-    <string name="app_name">Restaurant_App</string>
+    <string name="app_name">Restaurant App</string>
+    <string name="language_user">User</string>
+    <string name="language_enter_user">Enter The User</string>
+    <string name="language_password">Password</string>
+    <string name="language_enter_password">Enter The Password</string>
+    <string name="language_login">Login</string>
+    <string name="language_error">Error</string>
+    <string name="language_incorrect_data">Incorrect data</string>
+    <string name="language_welcome">Welcome</string>
+    <string name="language_sign_in">sign in</string>
+    <string name="language_touch_advance">Touch To Advance</string>
 </resources>
