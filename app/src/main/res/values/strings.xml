@@ -10,4 +10,8 @@
     <string name="language_welcome">Welcome</string>
     <string name="language_sign_in">sign in</string>
     <string name="language_touch_advance">Touch To Advance</string>
+    <string name="language_menu">menu</string>
+    <string name="language_email">email</string>
+    <string name="language_confirm_password">Confirm Password</string>
+    <string name="language_login_register">Login or  Register</string>
 </resources>

@@ -19,7 +19,7 @@
         android:gravity="center">
 
         <ImageView
-            android:layout_width="300dp"
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_margin="5dp"
             android:src="@drawable/iniciar_sesion" />
@@ -44,40 +44,46 @@
             <EditText
                 android:id="@+id/edit_inicio_user"
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:gravity="center"
+                android:layout_height="110dp"
                 android:layout_margin="5dp"
+                android:gravity="center"
                 android:hint="@string/language_user"
                 android:minHeight="48dp"
                 android:textColor="@color/material_dynamic_primary30"
-                android:textColorHint="@color/material_dynamic_neutral40" />
+                android:textColorHint="@color/material_dynamic_neutral40"
+                android:textSize="48sp" />
 
             <EditText
                 android:id="@+id/edit_inicio_password"
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
+                android:layout_height="110dp"
+                android:layout_marginTop="50dp"
                 android:gravity="center"
-                android:layout_margin="5dp"
                 android:hint="@string/language_password"
                 android:minHeight="48dp"
                 android:textColor="@color/material_dynamic_primary30"
-                android:textColorHint="@color/material_dynamic_neutral40" />
+                android:textColorHint="@color/material_dynamic_neutral40"
+                android:textSize="48sp" />
 
             <Button
                 android:id="@+id/btnLogin"
+                android:layout_width="379dp"
+                android:layout_height="117dp"
+                android:layout_marginTop="80dp"
                 android:elevation="10dp"
-                android:layout_width="150dp"
-                android:layout_height="wrap_content"
                 android:onClick="loginAcentral"
-                android:text="@string/language_login" />
+                android:text="@string/language_login"
+                android:textSize="34sp" />
 
             <Button
                 android:id="@+id/btnRegister"
+                android:layout_width="380dp"
+                android:layout_height="124dp"
+                android:layout_margin="10dp"
+                android:textSize="34sp"
                 android:elevation="10dp"
-                android:layout_width="150dp"
-                android:layout_height="wrap_content"
                 android:onClick="loginAregister"
-                android:text="@string/language_sign_in" />
+                android:text="@string/language_sign_in"/>
 
 
         </LinearLayout>

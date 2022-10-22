@@ -15,13 +15,13 @@
         android:layout_width="match_parent"
         android:layout_height="0dp"
         android:layout_margin="10dp"
-        android:layout_weight="40"
+        android:layout_weight="60"
         android:gravity="center">
 
         <ImageView
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:layout_margin="10dp"
+            android:layout_margin="0dp"
             android:scaleType="center"
             android:src="@drawable/logo_restaurant_rewhiter" />
     </LinearLayout>
@@ -35,25 +35,25 @@
         android:orientation="vertical">
 
         <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="200dp"
+            android:layout_width="674dp"
+            android:layout_height="607dp"
             android:layout_margin="10dp"
             android:layout_weight="1"
             android:fontFamily="@font/aclonica"
             android:gravity="center"
             android:text="@string/language_welcome"
             android:textColor="?android:attr/colorLongPressedHighlight"
-            android:textSize="50sp" />
+            android:textSize="100sp" />
 
         <TextView
-            android:layout_width="wrap_content"
-            android:layout_weight="1"
-            android:layout_height="match_parent"
+            android:layout_width="681dp"
+            android:layout_height="794dp"
             android:layout_margin="10dp"
+            android:layout_weight="1"
             android:gravity="center"
             android:text="@string/language_touch_advance"
             android:textColor="@android:color/secondary_text_dark"
-            android:textSize="30sp" />
+            android:textSize="50sp" />
     </LinearLayout>
 
 
