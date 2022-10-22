@@ -5,7 +5,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/fondo"
+    android:background="@drawable/fondo_port"
     android:gravity="center"
     android:onClick="irAlogin"
     android:orientation="vertical"
@@ -22,8 +22,7 @@
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:layout_margin="10dp"
-            android:scaleType="center"
-            android:src="@drawable/logo_restaurant_rewhiter" />
+            android:src="@drawable/logo_titulo_claro" />
     </LinearLayout>
 
     <LinearLayout
@@ -43,7 +42,7 @@
             android:gravity="center"
             android:text="@string/language_welcome"
             android:textColor="?android:attr/colorLongPressedHighlight"
-            android:textSize="50sp" />
+            android:textSize="45sp" />
 
         <TextView
             android:layout_width="wrap_content"

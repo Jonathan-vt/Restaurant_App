@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
@@ -12,7 +13,6 @@
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="0dp"
-
         android:layout_marginTop="25dp"
         android:layout_marginBottom="25dp"
         android:layout_weight="1"
@@ -22,7 +22,8 @@
             android:layout_width="300dp"
             android:layout_height="wrap_content"
             android:layout_margin="5dp"
-            android:src="@drawable/iniciar_sesion" />
+            android:src="@drawable/iniciar_sesion"
+            tools:ignore="ContentDescription" />
     </LinearLayout>
 
     <LinearLayout
@@ -34,12 +35,13 @@
         android:orientation="horizontal">
 
         <LinearLayout
-            android:layout_width="match_parent"
+            android:layout_width="0dp"
             android:layout_height="match_parent"
             android:layout_margin="20dp"
             android:layout_weight="1"
             android:gravity="center"
-            android:orientation="vertical">
+            android:orientation="vertical"
+            tools:ignore="NestedWeights,UselessParent">
 
             <EditText
                 android:id="@+id/edit_inicio_user"
@@ -49,8 +51,9 @@
                 android:layout_margin="5dp"
                 android:hint="@string/language_user"
                 android:minHeight="48dp"
-                android:textColor="@color/material_dynamic_primary30"
-                android:textColorHint="@color/material_dynamic_neutral40" />
+                android:textColor="@color/black"
+                android:autofillHints="username"
+                android:inputType="text" />
 
             <EditText
                 android:id="@+id/edit_inicio_password"
@@ -60,12 +63,14 @@
                 android:layout_margin="5dp"
                 android:hint="@string/language_password"
                 android:minHeight="48dp"
-                android:textColor="@color/material_dynamic_primary30"
-                android:textColorHint="@color/material_dynamic_neutral40" />
+                android:textColor="@color/black"
+                android:autofillHints="password"
+                android:inputType="textPassword" />
 
             <Button
                 android:id="@+id/btnLogin"
                 android:elevation="10dp"
+                android:layout_marginTop="25dp"
                 android:layout_width="150dp"
                 android:layout_height="wrap_content"
                 android:onClick="loginAcentral"

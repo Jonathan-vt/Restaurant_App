@@ -19,9 +19,9 @@
         android:gravity="center">
 
         <ImageView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_margin="5dp"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="10dp"
             android:src="@drawable/iniciar_sesion" />
     </LinearLayout>
 
@@ -37,32 +37,33 @@
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:layout_margin="20dp"
-            android:layout_weight="1"
             android:gravity="center"
             android:orientation="vertical">
 
             <EditText
                 android:id="@+id/edit_inicio_user"
-                android:layout_width="match_parent"
+                android:layout_width="800dp"
                 android:layout_height="110dp"
                 android:layout_margin="5dp"
                 android:gravity="center"
                 android:hint="@string/language_user"
                 android:minHeight="48dp"
-                android:textColor="@color/material_dynamic_primary30"
-                android:textColorHint="@color/material_dynamic_neutral40"
+                android:textColor="@color/black"
+                android:autofillHints="username"
+                android:inputType="text"
                 android:textSize="48sp" />
 
             <EditText
                 android:id="@+id/edit_inicio_password"
-                android:layout_width="match_parent"
+                android:layout_width="800dp"
                 android:layout_height="110dp"
                 android:layout_marginTop="50dp"
                 android:gravity="center"
                 android:hint="@string/language_password"
                 android:minHeight="48dp"
-                android:textColor="@color/material_dynamic_primary30"
-                android:textColorHint="@color/material_dynamic_neutral40"
+                android:textColor="@color/black"
+                android:autofillHints="password"
+                android:inputType="textPassword"
                 android:textSize="48sp" />
 
             <Button
