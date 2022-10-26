@@ -8,6 +8,6 @@
     <string name="language_error">Error</string>
     <string name="language_incorrect_data">Incorrect data</string>
     <string name="language_welcome">Welcome</string>
-    <string name="language_sign_in">sign in</string>
+    <string name="language_sign_in">sign_in</string>
     <string name="language_touch_advance">Touch To Advance</string>
 </resources>
