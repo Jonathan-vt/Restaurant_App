@@ -22,7 +22,7 @@
         <ImageView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_margin="50dp"
+            android:layout_margin="5dp"
             android:src="@drawable/acceso"/>
     </LinearLayout>
 
@@ -44,12 +44,12 @@
             <EditText
                 android:id="@+id/userTxt"
                 android:layout_width="match_parent"
-                android:layout_height="100dp"
+                android:layout_height="wrap_content"
+                android:textSize="28sp"
                 android:hint="@string/language_user"
                 android:gravity="center"
-                android:textSize="48sp"
                 android:layout_margin="10dp"
-                android:minHeight="48dp"
+                android:minHeight="28dp"
                 android:textColor="@color/black"
                 android:autofillHints="username"
                 android:inputType="text" />
@@ -57,12 +57,12 @@
             <EditText
                 android:id="@+id/correoTxt"
                 android:layout_width="match_parent"
-                android:layout_height="100dp"
-                android:textSize="48sp"
+                android:layout_height="wrap_content"
+                android:textSize="28sp"
                 android:gravity="center"
                 android:layout_margin="10dp"
                 android:hint="@string/language_email"
-                android:minHeight="48dp"
+                android:minHeight="28dp"
                 android:textColor="@color/black"
                 android:autofillHints="emailAddress"
                 android:inputType="textEmailAddress"  />
@@ -70,12 +70,12 @@
             <EditText
                 android:id="@+id/edit_txt_password"
                 android:layout_width="match_parent"
-                android:layout_height="100dp"
+                android:layout_height="wrap_content"
                 android:layout_margin="10dp"
                 android:gravity="center"
                 android:hint="@string/language_password"
-                android:minHeight="48dp"
-                android:textSize="48sp"
+                android:minHeight="28dp"
+                android:textSize="28sp"
                 android:textColor="@color/black"
                 android:autofillHints="password"
                 android:inputType="textPassword"/>
@@ -83,22 +83,22 @@
             <EditText
                 android:id="@+id/edit_txt_password_confir"
                 android:layout_width="match_parent"
-                android:layout_height="100dp"
-                android:textSize="48sp"
+                android:layout_height="wrap_content"
+                android:textSize="28sp"
                 android:gravity="center"
                 android:layout_margin="10dp"
                 android:hint="@string/language_confirm_password"
-                android:minHeight="48dp"
+                android:minHeight="28dp"
                 android:textColor="@color/black"
                 android:autofillHints="password"
                 android:inputType="textPassword" />
 
             <Button
                 android:id="@+id/btnRegister"
-                android:layout_width="360dp"
-                android:layout_height="110dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
                 android:layout_marginTop="50dp"
-                android:textSize="34sp"
+                android:textSize="20sp"
                 android:elevation="10dp"
                 android:onClick="registroAlogin"
                 android:text="@string/language_sign_in" />

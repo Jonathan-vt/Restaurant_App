@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout
+<androidx.coordinatorlayout.widget.CoordinatorLayout
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
@@ -33,5 +33,22 @@
             android:text="Actividad Central"
             android:textSize="34sp" />
 
+
+
     </LinearLayout>
-</RelativeLayout>
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/floaButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|end"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginBottom="20dp"
+        android:backgroundTint="@color/material_dynamic_primary30"
+        android:clickable="true"
+        android:contentDescription="boton flotante"
+        android:focusable="true"
+        app:srcCompat="@drawable/ic_lapiz" />
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

@@ -45,7 +45,7 @@ class LoginActivity : AppCompatActivity() {
                 .setNegativeButton("Cancelar", btnNegativo)
                 .create().show()
         } else {
-            Toast.makeText(this, "Usuario o contraseña incorrectos", Toast.LENGTH_LONG).show()
+            Toast.makeText(this, R.string.language_incorrect_data, Toast.LENGTH_LONG).show()
         }
     }//fin de la funcion
 
