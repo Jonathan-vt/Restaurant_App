@@ -15,15 +15,15 @@
         android:layout_width="match_parent"
         android:layout_height="0dp"
         android:layout_margin="10dp"
-        android:layout_weight="60"
+        android:layout_weight="40"
         android:gravity="center">
 
         <ImageView
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:layout_margin="5dp"
+            android:layout_margin="10dp"
             android:scaleType="center"
-            android:src="@drawable/logo_titulo_claro" />
+            android:src="@drawable/logo_restaurant_rewhiter" />
     </LinearLayout>
 
     <LinearLayout
@@ -36,20 +36,20 @@
 
         <TextView
             android:layout_width="wrap_content"
-            android:layout_height="650dp"
-            android:layout_margin="10dp"
+            android:layout_height="200dp"
+            android:layout_margin="0dp"
             android:layout_weight="1"
             android:fontFamily="@font/aclonica"
             android:gravity="center"
             android:text="@string/language_welcome"
             android:textColor="?android:attr/colorLongPressedHighlight"
-            android:textSize="100sp" />
+            android:textSize="80sp" />
 
         <TextView
             android:layout_width="wrap_content"
-            android:layout_height="794dp"
-            android:layout_margin="10dp"
             android:layout_weight="1"
+            android:layout_height="match_parent"
+            android:layout_margin="20dp"
             android:gravity="center"
             android:text="@string/language_touch_advance"
             android:textColor="@android:color/secondary_text_dark"

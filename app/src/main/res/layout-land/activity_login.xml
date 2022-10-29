@@ -4,36 +4,37 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#F19090"
+    android:background="@drawable/old_book_open"
     android:gravity="center"
-    android:orientation="vertical"
+    android:orientation="horizontal"
     tools:context=".LoginActivity">
 
     <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="0dp"
-        android:layout_margin="5dp"
-        android:layout_weight="1.2"
+        android:layout_width="384dp"
+        android:layout_height="242dp"
+        android:layout_marginTop="25dp"
+        android:layout_marginBottom="25dp"
+        android:layout_weight="1"
         android:gravity="center">
 
         <ImageView
-            android:layout_width="300dp"
-            android:layout_height="wrap_content"
-            android:layout_margin="5dp"
+            android:layout_width="match_parent"
+            android:layout_height="237dp"
+            android:layout_margin="2dp"
             android:src="@drawable/iniciar_sesion" />
     </LinearLayout>
 
     <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="0dp"
-        android:layout_margin="2dp"
+        android:layout_width="399dp"
+        android:layout_height="match_parent"
+        android:layout_margin="5dp"
         android:layout_weight="2"
         android:baselineAligned="false"
         android:orientation="horizontal">
 
         <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="match_parent"
+            android:layout_height="300dp"
             android:layout_margin="20dp"
             android:layout_weight="1"
             android:gravity="center"
@@ -41,44 +42,44 @@
 
             <EditText
                 android:id="@+id/edit_inicio_user"
-                android:layout_width="400dp"
-                android:layout_height="wrap_content"
-                android:gravity="center"
+                android:layout_width="200dp"
+                android:layout_height="2dp"
+                android:layout_margin="1dp"
                 android:layout_weight="1"
-                android:layout_margin="5dp"
-                android:hint="@string/language_user"
-                android:minHeight="48dp"
-                android:textColor="@color/black"
                 android:autofillHints="username"
-                android:inputType="text" />
+                android:gravity="center"
+                android:hint="@string/language_user"
+                android:inputType="text"
+                android:minHeight="8dp"
+                android:textColorHint="@color/black" />
 
             <EditText
                 android:id="@+id/edit_inicio_password"
-                android:layout_width="400dp"
+                android:layout_width="200dp"
                 android:layout_height="wrap_content"
-                android:layout_margin="5dp"
-                android:layout_weight="1"
+                android:layout_margin="1dp"
+                android:layout_weight="0.3"
+                android:autofillHints="password"
                 android:gravity="center"
                 android:hint="@string/language_password"
-                android:minHeight="48dp"
-                android:textColor="@color/black"
-                android:autofillHints="password"
-                android:inputType="textPassword" />
+                android:inputType="textPassword"
+                android:minHeight="8dp"
+                android:textColorHint="@color/black" />
 
             <Button
                 android:id="@+id/btnLogin"
-                android:elevation="10dp"
                 android:layout_width="160dp"
-                android:layout_weight="1"
-                android:layout_height="wrap_content"
+                android:layout_height="20dp"
+                android:layout_weight="0.3"
+                android:elevation="10dp"
                 android:onClick="loginAcentral"
                 android:text="@string/language_login" />
 
             <Button
                 android:id="@+id/btnRegister"
                 android:layout_width="160dp"
-                android:layout_weight="1"
-                android:layout_height="wrap_content"
+                android:layout_height="20dp"
+                android:layout_weight="0.3"
                 android:elevation="10dp"
                 android:minHeight="48dp"
                 android:onClick="loginAregister"
