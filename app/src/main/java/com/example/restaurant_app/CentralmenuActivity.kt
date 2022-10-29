@@ -21,6 +21,13 @@ class CentralmenuActivity : AppCompatActivity() {
             startActivity(inten)
         }
     }
+    //funcion llamar fracmento A
+    fun llamarfragA(View:View){
+        supportFragmentManager.beginTransaction()
+            .setReorderingAllowed(true)
+            .add(R.id.frag_A_container,FragmentA::class.java,null,"Frag_A")
+            .commit()
+    }
 
 
     //funcion menu en barra
