@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/old_book_open"
+    android:gravity="center"
+    android:orientation="horizontal"
+    tools:context=".LoginActivity">
+
+    <LinearLayout
+        android:layout_width="727dp"
+        android:layout_height="542dp"
+
+        android:layout_marginTop="25dp"
+        android:layout_marginBottom="25dp"
+        android:layout_weight="1"
+        android:gravity="center">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="365dp"
+            android:layout_margin="2dp"
+            android:src="@drawable/acceso" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="399dp"
+        android:layout_height="match_parent"
+        android:layout_margin="5dp"
+        android:layout_weight="2"
+        android:baselineAligned="false"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="573dp"
+            android:layout_height="850dp"
+            android:layout_margin="50dp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <EditText
+                android:id="@+id/edit_inicio_user"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:hint="@string/language_user"
+                android:minHeight="98dp"
+                android:textSize="40dp"
+                android:textColorHint="@color/teal_700" />
+
+            <EditText
+                android:id="@+id/edit_inicio_password"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:hint="@string/language_password"
+                android:minHeight="98dp"
+                android:textSize="40dp"
+                android:layout_marginTop="20dp"
+                android:textColorHint="@color/teal_700" />
+
+            <Button
+                android:id="@+id/btnLogin"
+                android:layout_width="250dp"
+                android:layout_height="wrap_content"
+                android:onClick="loginAcentral"
+                android:textSize="40dp"
+                android:layout_marginTop="20dp"
+                android:text="@string/language_login" />
+
+            <Button
+                android:id="@+id/btnRegister"
+                android:layout_width="250dp"
+                android:layout_height="wrap_content"
+                android:onClick="loginAregister"
+                android:textSize="40dp"
+                android:layout_marginTop="20dp"
+                android:text="@string/language_sign_in" />
+
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+</LinearLayout>

@@ -7,13 +7,12 @@
     android:layout_height="match_parent"
     android:background="@drawable/write_in_book"
     android:gravity="center"
-    android:orientation="vertical"
+    android:orientation="horizontal"
     tools:context=".RegisterActivity">
 
     <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="0dp"
-
+        android:layout_width="471dp"
+        android:layout_height="200dp"
         android:layout_marginTop="25dp"
         android:layout_marginBottom="25dp"
         android:layout_weight="1"
@@ -22,14 +21,14 @@
         <ImageView
             android:layout_width="300dp"
             android:layout_height="wrap_content"
-            android:src="@drawable/acceso"
             android:layout_margin="5dp"
+            android:src="@drawable/acceso"
             tools:ignore="ContentDescription" />
     </LinearLayout>
 
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="192dp"
+        android:layout_height="387dp"
         android:layout_margin="5dp"
         android:layout_weight="2"
         android:baselineAligned="false"

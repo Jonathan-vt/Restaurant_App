@@ -7,38 +7,37 @@
     android:layout_height="match_parent"
     android:background="@drawable/write_in_book"
     android:gravity="center"
-    android:orientation="vertical"
+    android:orientation="horizontal"
     tools:context=".RegisterActivity">
 
     <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="0dp"
-
+        android:layout_width="471dp"
+        android:layout_height="750dp"
         android:layout_marginTop="25dp"
         android:layout_marginBottom="25dp"
         android:layout_weight="1"
         android:gravity="center">
 
         <ImageView
-            android:layout_width="300dp"
-            android:layout_height="wrap_content"
-            android:src="@drawable/acceso"
+            android:layout_width="689dp"
+            android:layout_height="360dp"
             android:layout_margin="5dp"
+            android:src="@drawable/acceso"
             tools:ignore="ContentDescription" />
     </LinearLayout>
 
     <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="192dp"
+        android:layout_width="306dp"
+        android:layout_height="755dp"
         android:layout_margin="5dp"
         android:layout_weight="2"
         android:baselineAligned="false"
         android:orientation="horizontal">
 
         <LinearLayout
-            android:layout_width="320dp"
-            android:layout_height="316dp"
-            android:layout_margin="50dp"
+            android:layout_width="984dp"
+            android:layout_height="716dp"
+            android:layout_margin="10dp"
             android:layout_weight="1"
             android:gravity="center"
             android:onClick="registroAcentral"
@@ -50,8 +49,9 @@
                 android:layout_height="wrap_content"
                 android:gravity="center"
                 android:hint="@string/language_enter_user"
-                android:minHeight="48dp"
-                android:textColorHint="@color/material_dynamic_neutral40" />
+                android:minHeight="98dp"
+                android:textSize="40dp"
+                android:textColorHint="@color/black" />
 
             <EditText
                 android:id="@+id/correoTxt"
@@ -59,8 +59,10 @@
                 android:layout_height="wrap_content"
                 android:gravity="center"
                 android:hint="@string/language_enter_email"
-                android:minHeight="48dp"
-                android:textColorHint="@color/material_dynamic_neutral40" />
+                android:layout_marginTop="20dp"
+                android:minHeight="98dp"
+                android:textSize="40dp"
+                android:textColorHint="@color/black" />
 
             <EditText
                 android:id="@+id/edit_txt_password"
@@ -68,8 +70,10 @@
                 android:layout_height="wrap_content"
                 android:gravity="center"
                 android:hint="@string/language_enter_password"
-                android:minHeight="48dp"
-                android:textColorHint="@color/material_dynamic_neutral40" />
+                android:layout_marginTop="20dp"
+                android:minHeight="98dp"
+                android:textSize="40dp"
+                android:textColorHint="@color/black" />
 
             <EditText
                 android:id="@+id/edit_txt_password_confir"
@@ -77,15 +81,19 @@
                 android:layout_height="wrap_content"
                 android:gravity="center"
                 android:hint="@string/language_confirm_password"
-                android:minHeight="48dp"
-                android:textColorHint="@color/material_dynamic_neutral_variant40" />
+                android:layout_marginTop="20dp"
+                android:minHeight="98dp"
+                android:textSize="40dp"
+                android:textColorHint="@color/black" />
 
             <Button
                 android:id="@+id/btnRegister"
-                android:layout_width="150dp"
-                android:layout_height="wrap_content"
+                android:layout_width="350dp"
+                android:layout_height="80dp"
                 android:onClick="registroAlogin"
-                android:text="@string/language_register" />
+                android:text="@string/language_register"
+                android:layout_marginTop="20dp"
+                android:textSize="30dp" />
 
 
         </LinearLayout>

@@ -1,13 +1,16 @@
 <resources>
     <string name="app_name">Restaurant App</string>
     <string name="language_user">User</string>
-    <string name="language_enter_user">Enter The User</string>
+    <string name="language_enter_user">Enter the user</string>
     <string name="language_password">Password</string>
-    <string name="language_enter_password">Enter The Password</string>
+    <string name="language_enter_password">Enter the password</string>
     <string name="language_login">Login</string>
     <string name="language_error">Error</string>
     <string name="language_incorrect_data">Incorrect data</string>
     <string name="language_welcome">Welcome</string>
-    <string name="language_sign_in">sign in</string>
-    <string name="language_touch_advance">Touch To Advance</string>
+    <string name="language_sign_in">Sign in</string>
+    <string name="language_touch_advance">Touch to advance</string>
+    <string name="language_enter_email">Enter the email</string>
+    <string name="language_confirm_password">Confirm Password</string>
+    <string name="language_register">Register</string>
 </resources>

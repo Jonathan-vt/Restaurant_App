@@ -37,7 +37,7 @@
 
         <LinearLayout
             android:layout_width="320dp"
-            android:layout_height="316dp"
+            android:layout_height="856dp"
             android:layout_margin="50dp"
             android:layout_weight="1"
             android:gravity="center"
@@ -46,45 +46,55 @@
 
             <EditText
                 android:id="@+id/userTxt"
-                android:layout_width="match_parent"
+                android:layout_width="600dp"
                 android:layout_height="wrap_content"
                 android:gravity="center"
                 android:hint="@string/language_enter_user"
-                android:minHeight="48dp"
+                android:minHeight="98dp"
+                android:layout_marginTop="20dp"
+                android:textSize="50dp"
                 android:textColorHint="@color/material_dynamic_neutral40" />
 
             <EditText
                 android:id="@+id/correoTxt"
-                android:layout_width="match_parent"
+                android:layout_width="600dp"
                 android:layout_height="wrap_content"
                 android:gravity="center"
                 android:hint="@string/language_enter_email"
-                android:minHeight="48dp"
+                android:minHeight="98dp"
+                android:layout_marginTop="20dp"
+                android:textSize="50dp"
                 android:textColorHint="@color/material_dynamic_neutral40" />
 
             <EditText
                 android:id="@+id/edit_txt_password"
-                android:layout_width="match_parent"
+                android:layout_width="600dp"
                 android:layout_height="wrap_content"
                 android:gravity="center"
                 android:hint="@string/language_enter_password"
-                android:minHeight="48dp"
+                android:minHeight="98dp"
+                android:layout_marginTop="20dp"
+                android:textSize="50dp"
                 android:textColorHint="@color/material_dynamic_neutral40" />
 
             <EditText
                 android:id="@+id/edit_txt_password_confir"
-                android:layout_width="match_parent"
+                android:layout_width="600dp"
                 android:layout_height="wrap_content"
                 android:gravity="center"
                 android:hint="@string/language_confirm_password"
-                android:minHeight="48dp"
+                android:minHeight="98dp"
+                android:layout_marginTop="20dp"
+                android:textSize="50dp"
                 android:textColorHint="@color/material_dynamic_neutral_variant40" />
 
             <Button
                 android:id="@+id/btnRegister"
-                android:layout_width="150dp"
+                android:layout_width="350dp"
                 android:layout_height="wrap_content"
                 android:onClick="registroAlogin"
+                android:layout_marginTop="20dp"
+                android:textSize="50dp"
                 android:text="@string/language_register" />
 
 

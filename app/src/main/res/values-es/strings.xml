@@ -8,6 +8,9 @@
     <string name="language_error">Error</string>
     <string name="language_incorrect_data">Datos incorrectos</string>
     <string name="language_welcome">Bienvenidos</string>
-    <string name="language_sign_in">registrarse</string>
-    <string name="language_touch_advance">toca para avanzar</string>
+    <string name="language_sign_in">Registrarse</string>
+    <string name="language_touch_advance">Toca para avanzar</string>
+    <string name="language_enter_email">Ingresar el correo</string>
+    <string name="language_confirm_password">Confirma la Contraseña</string>
+    <string name="language_register">Registrarse</string>
 </resources>
