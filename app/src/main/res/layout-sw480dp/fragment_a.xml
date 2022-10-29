@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/salmon_600"
+    android:orientation="vertical"
+    tools:context=".FragmentA">
+
+    <!-- TODO: Update blank fragment layout -->
+
+
+    <ScrollView
+        android:layout_weight="20"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:id="@+id/cotenedorScroll"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <Button
+                android:id="@+id/button_cerrar_frag"
+                android:onClick=""
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/language_close" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:textSize="60sp"
+                android:text="@string/app_name">
+            </TextView>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:textSize="60sp"
+                android:text="@string/app_name">
+            </TextView>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:textSize="60sp"
+                android:text="@string/app_name">
+            </TextView>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:textSize="60sp"
+                android:text="@string/app_name">
+            </TextView>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:textSize="60sp"
+                android:text="@string/app_name">
+            </TextView>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:textSize="60sp"
+                android:text="@string/app_name">
+            </TextView>
+
+        </LinearLayout>
+    </ScrollView>
+    <FrameLayout
+        android:id="@+id/frag_A_container"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="47">
+
+    </FrameLayout>
+
+</FrameLayout>

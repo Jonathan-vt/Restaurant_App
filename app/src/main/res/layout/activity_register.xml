@@ -5,7 +5,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#F19090"
+    android:background="@drawable/write_in_book"
     android:gravity="center"
     android:orientation="vertical"
     tools:context=".RegisterActivity">
@@ -44,31 +44,31 @@
 
             <EditText
                 android:id="@+id/userTxt"
-                android:layout_width="match_parent"
+                android:layout_width="300dp"
                 android:layout_height="wrap_content"
                 android:hint="@string/language_user"
                 android:gravity="center"
                 android:layout_margin="5dp"
                 android:minHeight="48dp"
-                android:textColor="@color/black"
+                android:textColorHint="@color/black"
                 android:autofillHints="username"
                 android:inputType="text" />
 
             <EditText
                 android:id="@+id/correoTxt"
-                android:layout_width="match_parent"
+                android:layout_width="300dp"
                 android:layout_height="wrap_content"
                 android:gravity="center"
                 android:layout_margin="5dp"
                 android:hint="@string/language_email"
                 android:minHeight="48dp"
-                android:textColor="@color/black"
+                android:textColorHint="@color/black"
                 android:autofillHints="emailAddress"
                 android:inputType="textEmailAddress" />
 
             <EditText
                 android:id="@+id/edit_txt_password"
-                android:layout_width="match_parent"
+                android:layout_width="300dp"
                 android:layout_height="wrap_content"
                 android:layout_margin="5dp"
                 android:autofillHints="password"
@@ -76,17 +76,17 @@
                 android:hint="@string/language_password"
                 android:inputType="textPassword"
                 android:minHeight="48dp"
-                android:textColor="@color/black" />
+                android:textColorHint="@color/black" />
 
             <EditText
                 android:id="@+id/edit_txt_password_confir"
-                android:layout_width="match_parent"
+                android:layout_width="300dp"
                 android:layout_height="wrap_content"
                 android:gravity="center"
                 android:layout_margin="5dp"
                 android:hint="@string/language_confirm_password"
                 android:minHeight="48dp"
-                android:textColor="@color/black"
+                android:textColorHint="@color/black"
                 android:autofillHints="password"
                 android:inputType="textPassword" />
 
