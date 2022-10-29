@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F19090"
+    android:gravity="center"
+    android:orientation="vertical"
+    tools:context=".RegisterActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+
+        android:layout_marginTop="25dp"
+        android:layout_marginBottom="25dp"
+        android:layout_weight="40"
+        android:gravity="center">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="50dp"
+            android:src="@drawable/acceso"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="300dp"
+        android:layout_margin="10dp"
+        android:layout_weight="60"
+        android:baselineAligned="false"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="40dp"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <EditText
+                android:id="@+id/userTxt"
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:hint="@string/language_user"
+                android:gravity="center"
+                android:textSize="48sp"
+                android:layout_margin="10dp"
+                android:minHeight="48dp"
+                android:textColor="@color/black"
+                android:autofillHints="username"
+                android:inputType="text" />
+
+            <EditText
+                android:id="@+id/correoTxt"
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:textSize="48sp"
+                android:gravity="center"
+                android:layout_margin="10dp"
+                android:hint="@string/language_email"
+                android:minHeight="48dp"
+                android:textColor="@color/black"
+                android:autofillHints="emailAddress"
+                android:inputType="textEmailAddress"  />
+
+            <EditText
+                android:id="@+id/edit_txt_password"
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:layout_margin="10dp"
+                android:gravity="center"
+                android:hint="@string/language_password"
+                android:minHeight="48dp"
+                android:textSize="48sp"
+                android:textColor="@color/black"
+                android:autofillHints="password"
+                android:inputType="textPassword"/>
+
+            <EditText
+                android:id="@+id/edit_txt_password_confir"
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:textSize="48sp"
+                android:gravity="center"
+                android:layout_margin="10dp"
+                android:hint="@string/language_confirm_password"
+                android:minHeight="48dp"
+                android:textColor="@color/black"
+                android:autofillHints="password"
+                android:inputType="textPassword" />
+
+            <Button
+                android:id="@+id/btnRegister"
+                android:layout_width="360dp"
+                android:layout_height="110dp"
+                android:layout_marginTop="90dp"
+                android:textSize="34sp"
+                android:elevation="10dp"
+                android:onClick="registroAlogin"
+                android:text="@string/language_sign_in" />
+
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+</LinearLayout>

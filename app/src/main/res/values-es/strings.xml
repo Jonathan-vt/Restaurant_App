@@ -8,6 +8,11 @@
     <string name="language_error">Error</string>
     <string name="language_incorrect_data">Datos incorrectos</string>
     <string name="language_welcome">Bienvenidos</string>
-    <string name="language_sign_in">registrarse</string>
+    <string name="language_sign_in">Registrarse</string>
     <string name="language_touch_advance">toca para avanzar</string>
+    <string name="language_menu">Menu</string>
+    <string name="language_email">Correo</string>
+    <string name="language_confirm_password">Confirmar contraseña</string>
+    <string name="language_login_register">Inicia sesion o Registrate</string>
+    <string name="language_to_register">Ir a Registrarse</string>
 </resources>

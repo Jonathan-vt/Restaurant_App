@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/fondo_port"
+    android:gravity="center"
+    android:onClick="irAlogin"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_margin="10dp"
+        android:layout_weight="40"
+        android:gravity="center">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="10dp"
+            android:src="@drawable/logo_restaurant_rewhiter" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:gravity="center"
+        android:layout_margin="10dp"
+        android:layout_weight="60"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="674dp"
+            android:layout_height="607dp"
+            android:layout_margin="10dp"
+            android:layout_weight="1"
+            android:fontFamily="@font/aclonica"
+            android:gravity="center"
+            android:text="@string/language_welcome"
+            android:textColor="?android:attr/colorLongPressedHighlight"
+            android:textSize="90sp" />
+
+        <TextView
+            android:layout_width="681dp"
+            android:layout_height="794dp"
+            android:layout_margin="10dp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="@string/language_touch_advance"
+            android:textColor="@android:color/secondary_text_dark"
+            android:textSize="50sp" />
+    </LinearLayout>
+
+
+</LinearLayout>

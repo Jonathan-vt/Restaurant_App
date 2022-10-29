@@ -1,17 +1,23 @@
 <?xml version="1.0" encoding="utf-8"?>
 <menu
     xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
-    >
+    xmlns:app="http://schemas.android.com/apk/res-auto">
 
-    <item
-        android:id="@+id/itm_buscar"
-        android:title="BUSCAR"
-        app:showAsAction="always"/>
-    <item
-        android:id="@+id/itm_subir"
-        android:title="SUBIR"
-        app:showAsAction="never"
-        />
+    <item android:title="More"
+        android:id="@+id/btmMore"
+        android:icon="@drawable/ic_more"
+        app:showAsAction="always">
+        <menu>
+
+            <item android:title="Configuracion"
+                android:icon="@drawable/ic_settings_24"
+                android:id="@+id/itm_Setting"/>
+
+             <item android:title="Cerrar"
+                 android:icon="@drawable/ic_key"
+                android:id="@+id/itm_Close"/>
+
+        </menu>
+    </item>
 
 </menu>

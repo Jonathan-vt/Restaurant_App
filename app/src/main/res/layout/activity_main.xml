@@ -5,7 +5,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/fondo"
+    android:background="@drawable/fondo_port"
     android:gravity="center"
     android:onClick="irAlogin"
     android:orientation="vertical"
@@ -15,14 +15,14 @@
         android:layout_width="match_parent"
         android:layout_height="0dp"
         android:layout_margin="10dp"
-        android:layout_weight="1"
+        android:layout_weight="40"
         android:gravity="center">
 
         <ImageView
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:src="@drawable/logo_restaurant_rewhiter"
-            android:layout_margin="10dp"/>
+            android:layout_margin="10dp"
+            android:src="@drawable/logo_titulo_claro" />
     </LinearLayout>
 
     <LinearLayout
@@ -30,18 +30,19 @@
         android:layout_height="0dp"
         android:gravity="center"
         android:layout_margin="10dp"
-        android:layout_weight="1"
+        android:layout_weight="60"
         android:orientation="vertical">
 
         <TextView
             android:layout_width="wrap_content"
-            android:layout_height="match_parent"
+            android:layout_height="200dp"
             android:layout_margin="10dp"
             android:layout_weight="1"
+            android:fontFamily="@font/aclonica"
             android:gravity="center"
             android:text="@string/language_welcome"
-            android:textColor="?android:attr/colorActivatedHighlight"
-            android:textSize="50sp" />
+            android:textColor="?android:attr/colorLongPressedHighlight"
+            android:textSize="45sp" />
 
         <TextView
             android:layout_width="wrap_content"
