@@ -15,4 +15,6 @@
     <string name="language_confirm_password">Confirm Password</string>
     <string name="language_login_register">Login or  Register</string>
     <string name="language_to_register">To Register</string>
+    <string name="language_boton_flotante">Button Floting</string>
+    <string name="language_close">Close</string>
 </resources>
