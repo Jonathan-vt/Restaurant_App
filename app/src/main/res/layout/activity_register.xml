@@ -50,7 +50,7 @@
                 android:gravity="center"
                 android:layout_margin="5dp"
                 android:minHeight="48dp"
-                android:textColorHint="@color/black"
+                android:textColorHint="@color/material_dynamic_neutral_variant40"
                 android:autofillHints="username"
                 android:inputType="text" />
 
@@ -62,7 +62,7 @@
                 android:layout_margin="5dp"
                 android:hint="@string/language_email"
                 android:minHeight="48dp"
-                android:textColorHint="@color/black"
+                android:textColorHint="@color/material_dynamic_neutral_variant40"
                 android:autofillHints="emailAddress"
                 android:inputType="textEmailAddress" />
 
@@ -76,7 +76,7 @@
                 android:hint="@string/language_password"
                 android:inputType="textPassword"
                 android:minHeight="48dp"
-                android:textColorHint="@color/black" />
+                android:textColorHint="@color/material_dynamic_neutral_variant40" />
 
             <EditText
                 android:id="@+id/edit_txt_password_confir"
@@ -86,7 +86,7 @@
                 android:layout_margin="5dp"
                 android:hint="@string/language_confirm_password"
                 android:minHeight="48dp"
-                android:textColorHint="@color/black"
+                android:textColorHint="@color/material_dynamic_neutral_variant40"
                 android:autofillHints="password"
                 android:inputType="textPassword" />
 

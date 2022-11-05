@@ -51,7 +51,7 @@
                 android:hint="@string/language_user"
                 android:inputType="text"
                 android:minHeight="48dp"
-                android:textColor="@color/black" />
+                android:textColorHint="@color/material_dynamic_neutral_variant40" />
 
             <EditText
                 android:id="@+id/edit_inicio_password"
@@ -64,7 +64,7 @@
                 android:hint="@string/language_password"
                 android:inputType="textPassword"
                 android:minHeight="48dp"
-                android:textColor="@color/black" />
+                android:textColorHint="@color/material_dynamic_neutral_variant40" />
 
             <Button
                 android:id="@+id/btnLogin"

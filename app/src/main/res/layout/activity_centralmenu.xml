@@ -36,7 +36,7 @@
         </FrameLayout>
 
         <HorizontalScrollView
-            android:layout_weight="47"
+            android:layout_weight="50"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:layout_marginBottom="50dp"
@@ -47,6 +47,11 @@
                 android:layout_height="wrap_content"
                 android:layout_gravity="center"
                 android:orientation="horizontal">
+
+                <LinearLayout
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:layout_margin="10dp"/>
 
                 <ImageView
                     android:id="@+id/imageView1"
@@ -63,10 +68,10 @@
                     android:layout_margin="10dp"
                     android:layout_width="100dp"
                     android:layout_height="100dp"
+                    android:elevation="20dp"
                     app:layout_anchor="@+id/linearLayout"
                     app:layout_anchorGravity="center"
                     app:srcCompat="@drawable/ic_restaurant_menu" />
-
                 <ImageView
                     android:id="@+id/imageView3"
                     android:layout_width="100dp"
@@ -79,24 +84,38 @@
                     tools:ignore="SpeakableTextPresentCheck" />
                 <ImageView
                     android:id="@+id/imageView4"
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:layout_margin="10dp"
+                    android:onClick="llamarfragA"
+                    app:layout_anchor="@+id/linearLayout"
+                    app:layout_anchorGravity="center"
+                    app:srcCompat="@drawable/ic_restaurant_menu"
+                    tools:ignore="SpeakableTextPresentCheck" />
+                <ImageView
+                    android:id="@+id/imageView5"
                     android:layout_margin="10dp"
                     android:layout_width="100dp"
                     android:layout_height="100dp"
                     app:layout_anchor="@+id/linearLayout"
                     app:layout_anchorGravity="center"
                     app:srcCompat="@drawable/ic_restaurant_menu" />
+                <LinearLayout
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:layout_margin="10dp"/>
 
             </LinearLayout>
         </HorizontalScrollView>
 
 
     </LinearLayout>
+
     <com.google.android.material.floatingactionbutton.FloatingActionButton
         android:id="@+id/floaButton"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_gravity="bottom|end"
-        android:elevation="10dp"
         android:layout_marginStart="10dp"
         android:layout_marginTop="10dp"
         android:layout_marginEnd="10dp"
@@ -104,8 +123,12 @@
         android:backgroundTint="@color/material_dynamic_primary30"
         android:clickable="true"
         android:contentDescription="@string/language_boton_flotante"
+        android:elevation="10dp"
         android:focusable="true"
-        app:srcCompat="@drawable/ic_lapiz" />
+        android:minWidth="48dp"
+        android:minHeight="48dp"
+        app:srcCompat="@drawable/ic_lapiz"
+        tools:ignore="RedundantDescriptionCheck" />
 
 
 
