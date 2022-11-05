@@ -25,4 +25,5 @@
     <string name="language_potato_chips">Potato Chips</string>
     <string name="language_Burgers">Burgers</string>
     <string name="language_drinks">Drinks</string>
+    <string name="language_select_preference">Select your Preference</string>
 </resources>

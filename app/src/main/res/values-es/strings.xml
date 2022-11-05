@@ -25,4 +25,5 @@
     <string name="language_potato_chips">Papas Fritas</string>
     <string name="language_Burgers">Hamburguesas</string>
     <string name="language_drinks">Bebidas</string>
+    <string name="language_select_preference">Seleccione su Preferencia</string>
 </resources>

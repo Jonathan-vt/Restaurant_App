@@ -32,7 +32,7 @@
                     android:layout_height="wrap_content"
                     android:layout_gravity="center_horizontal"
                     android:layout_marginLeft="14dp"
-                    android:text="Seleccione su Preferencia"
+                    android:text="@string/language_select_preference"
                     android:autoSizeTextType="uniform"
                     android:textColor="@color/design_default_color_primary"
                     android:textSize="30sp">
