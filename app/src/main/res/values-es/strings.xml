@@ -26,4 +26,9 @@
     <string name="language_Burgers">Hamburguesas</string>
     <string name="language_drinks">Bebidas</string>
     <string name="language_select_preference">Seleccione su Preferencia</string>
+    <string name="language_mineral_water">Agua Mineral</string>
+    <string name="language_beer">Cerveza</string>
+    <string name="language_lemonade">Limonada</string>
+    <string name="language_soda">Gaseosa</string>
+    <string name="language_fruit_juice">Jugo de Frutas</string>
 </resources>
