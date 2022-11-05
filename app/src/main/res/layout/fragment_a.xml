@@ -36,7 +36,7 @@
                 android:layout_height="match_parent"
                 android:textAlignment="center"
                 android:layout_weight="50"
-                android:text="Product"
+                android:text="@string/language_drinks"
                 android:textColor="#50E90E"
                 android:textSize="25sp">
             </TextView>
@@ -72,7 +72,7 @@
                         android:layout_height="wrap_content"
                         android:gravity="center"
                         android:layout_weight="20"
-                        android:text="24.99"
+                        android:text="0.99"
                         android:textSize="30sp"
                         />
 
@@ -87,13 +87,13 @@
                             android:layout_height="0dp"
                             android:layout_weight="30"
                             android:textAlignment="center"
-                            android:text="@string/language_arepas"
+                            android:text="@string/language_mineral_water"
                             android:autoSizeTextType="uniform"/>
                         <ImageView
                             android:layout_width="match_parent"
                             android:layout_height="0dp"
                             android:layout_weight="70"
-                            android:src="@drawable/arepas"/>
+                            android:src="@drawable/b1_agua1500x1000"/>
                     </LinearLayout>
 
                     <EditText
@@ -118,7 +118,7 @@
                         android:layout_height="wrap_content"
                         android:gravity="center"
                         android:layout_weight="20"
-                        android:text="24.99"
+                        android:text="1.99"
                         android:textSize="30sp"
                         />
 
@@ -133,13 +133,13 @@
                             android:layout_height="0dp"
                             android:layout_weight="30"
                             android:textAlignment="center"
-                            android:text="@string/language_arepas"
+                            android:text="@string/language_lemonade"
                             android:autoSizeTextType="uniform"/>
                         <ImageView
                             android:layout_width="match_parent"
                             android:layout_height="0dp"
                             android:layout_weight="70"
-                            android:src="@drawable/arepas"/>
+                            android:src="@drawable/b2_limonada1500x1000"/>
                     </LinearLayout>
 
                     <EditText
@@ -164,7 +164,7 @@
                         android:layout_height="wrap_content"
                         android:gravity="center"
                         android:layout_weight="20"
-                        android:text="24.99"
+                        android:text="1.99"
                         android:textSize="30sp"
                         />
 
@@ -179,13 +179,13 @@
                             android:layout_height="0dp"
                             android:layout_weight="30"
                             android:textAlignment="center"
-                            android:text="@string/language_arepas"
+                            android:text="@string/language_fruit_juice"
                             android:autoSizeTextType="uniform"/>
                         <ImageView
                             android:layout_width="match_parent"
                             android:layout_height="0dp"
                             android:layout_weight="70"
-                            android:src="@drawable/arepas"/>
+                            android:src="@drawable/b3_jugos1500x1000"/>
                     </LinearLayout>
 
                     <EditText
@@ -210,7 +210,7 @@
                         android:layout_height="wrap_content"
                         android:gravity="center"
                         android:layout_weight="20"
-                        android:text="24.99"
+                        android:text="0.99"
                         android:textSize="30sp"
                         />
 
@@ -220,18 +220,20 @@
                         android:layout_weight="40"
                         android:orientation="vertical"
                         android:layout_marginTop="0dp">
+
                         <TextView
                             android:layout_width="match_parent"
                             android:layout_height="0dp"
                             android:layout_weight="30"
-                            android:textAlignment="center"
-                            android:text="@string/language_arepas"
-                            android:autoSizeTextType="uniform"/>
+                            android:autoSizeTextType="uniform"
+                            android:text="@string/language_soda"
+                            android:textAlignment="center" />
+
                         <ImageView
                             android:layout_width="match_parent"
                             android:layout_height="0dp"
                             android:layout_weight="70"
-                            android:src="@drawable/arepas"/>
+                            android:src="@drawable/b4_gaseosa1500x1000"/>
                     </LinearLayout>
 
                     <EditText
@@ -256,7 +258,7 @@
                         android:layout_height="wrap_content"
                         android:gravity="center"
                         android:layout_weight="20"
-                        android:text="24.99"
+                        android:text="1.99"
                         android:textSize="30sp"
                         />
 
@@ -271,13 +273,13 @@
                             android:layout_height="0dp"
                             android:layout_weight="30"
                             android:textAlignment="center"
-                            android:text="@string/language_arepas"
+                            android:text="@string/language_beer"
                             android:autoSizeTextType="uniform"/>
                         <ImageView
                             android:layout_width="match_parent"
                             android:layout_height="0dp"
                             android:layout_weight="70"
-                            android:src="@drawable/arepas"/>
+                            android:src="@drawable/b5_cerveza1500x1000"/>
                     </LinearLayout>
 
                     <EditText
