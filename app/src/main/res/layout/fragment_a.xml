@@ -51,9 +51,7 @@
                     android:layout_marginLeft="30dp"
                     android:layout_weight="1"
                     android:text="@string/language_arepas"
-                    android:textSize="30sp"
-                    >
-                </TextView>
+                    android:textSize="30sp" />
 
                 <ImageView
                     android:layout_width="match_parent"
@@ -75,10 +73,7 @@
                         android:layout_marginLeft="30dp"
                         android:layout_weight="1"
                         android:text="@string/language_tacos"
-                        android:textSize="30sp"
-                        >
-
-                    </TextView>
+                        android:textSize="30sp" />
                     <ImageView
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
@@ -99,9 +94,7 @@
                         android:layout_marginLeft="30dp"
                         android:layout_weight="1"
                         android:text="@string/language_rice"
-                        android:textSize="30sp"
-                        >
-                    </TextView>
+                        android:textSize="30sp" />
                     <ImageView
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
@@ -123,14 +116,12 @@
                         android:layout_marginLeft="30dp"
                         android:layout_weight="1"
                         android:text="@string/language_salads"
-                        android:textSize="30sp"
-                        >
-                    </TextView>
+                        android:textSize="30sp" />
                     <ImageView
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
                         android:layout_weight="1"
-                        android:src="@drawable/Ensaladas1500x1000"
+                        android:src="@drawable/ensalada1500x1000"
                         />
                 </LinearLayout>
 
@@ -147,15 +138,12 @@
                         android:layout_marginLeft="30dp"
                         android:layout_weight="1"
                         android:text="@string/language_pasta"
-                        android:textSize="30sp"
-                        >
-                    </TextView>
+                        android:textSize="30sp"/>
                     <ImageView
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
                         android:layout_weight="1"
-                        android:src="@drawable/Pastas1500x1000"
-                        >
+                        android:src="@drawable/pasta1500x1000"/>
                 </LinearLayout>
 
                 <LinearLayout
@@ -171,14 +159,12 @@
                         android:layout_marginLeft="30dp"
                         android:layout_weight="1"
                         android:text="@string/language_potato_chips"
-                        android:textSize="30sp"
-                        >
-                    </TextView>
+                        android:textSize="30sp" />
                     <ImageView
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
                         android:layout_weight="1"
-                        android:src="@drawable/PapasFritas1500x1000"
+                        android:src="@drawable/papas_fritas1500x1000"
                         />
                 </LinearLayout>
 
@@ -195,15 +181,13 @@
                         android:layout_marginLeft="30dp"
                         android:layout_weight="1"
                         android:text="@string/language_Burgers"
-                        android:textSize="30sp"
-                        android:layout_marginTop="0dp">
-                    </TextView>
+                        android:textSize="30sp" />
                     <ImageView
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
                         android:layout_weight="1"
-                        android:src="@drawable/Hamburguesa1500x1000"
-                        android:layout_marginTop="0dp"/>
+                        android:src="@drawable/hamburguesa_v1500x1000"
+                        />
                 </LinearLayout>
 
                 <LinearLayout
@@ -219,14 +203,12 @@
                         android:layout_marginLeft="30dp"
                         android:layout_weight="1"
                         android:text="@string/language_drinks"
-                        android:textSize="30sp"
-                        >
-                    </TextView>
+                        android:textSize="30sp" />
                     <ImageView
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
                         android:layout_weight="1"
-                        android:src="@drawable/Bebidas1500x1000"
+                        android:src="@drawable/bebida_base_leche1500x1000"
                         />
                 </LinearLayout>
                 <Button
