@@ -17,4 +17,12 @@
     <string name="language_to_register">To Register</string>
     <string name="language_boton_flotante">Button Floting</string>
     <string name="language_close">Close</string>
+    <string name="language_arepas">Arepas</string>
+    <string name="language_tacos">Tacos</string>
+    <string name="language_rice">Rice</string>
+    <string name="language_salads">Salads</string>
+    <string name="language_pasta">Pasta</string>
+    <string name="language_potato_chips">Potato Chips</string>
+    <string name="language_Burgers">Burgers</string>
+    <string name="language_drinks">Drinks</string>
 </resources>
