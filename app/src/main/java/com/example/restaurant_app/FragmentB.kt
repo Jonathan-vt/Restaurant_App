@@ -7,7 +7,7 @@ import android.view.View
 import android.view.ViewGroup
 
 
-class FragmentA : Fragment() {
+class FragmentB : Fragment() {
 
     //funcion crear Fragment
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -18,7 +18,7 @@ class FragmentA : Fragment() {
     // funcion mostrar fragment
     override fun onCreateView(inflater:LayoutInflater, container:ViewGroup?, savedInstanceState:Bundle?):View?
     {
-        return inflater.inflate(R.layout.fragment_a, container, false)
+        return inflater.inflate(R.layout.fragment_b, container, false)
     }
 
 

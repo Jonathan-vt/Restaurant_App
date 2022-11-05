@@ -36,7 +36,7 @@ class LoginActivity : AppCompatActivity() {
         val btnNegativo = { nombre1: DialogInterface, nombre2: Int ->
             Toast.makeText(this, "Cancelaste el ingreso", Toast.LENGTH_LONG).show()
         }
-        if (username == "grupo2" && password == "codigo") {
+        if (username == "@2" && password == "22") {
             Toast.makeText(this, "Credenciales validas", Toast.LENGTH_LONG).show()
             val dialog = AlertDialog.Builder(this)
                 .setTitle("Bienvenido $username")

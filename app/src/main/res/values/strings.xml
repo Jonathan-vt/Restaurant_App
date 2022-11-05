@@ -26,4 +26,6 @@
     <string name="language_Burgers">Burgers</string>
     <string name="language_drinks">Drinks</string>
     <string name="language_select_preference">Select your Preference</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
 </resources>
