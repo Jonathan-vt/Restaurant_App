@@ -50,7 +50,7 @@
 
 
                 <LinearLayout
-                    android:layout_width="100dp"
+                    android:layout_width="50dp"
                     android:layout_height="100dp"
                     android:gravity="center"
                     android:layout_margin="10dp"/>
@@ -64,18 +64,20 @@
                     android:elevation="20dp"
                     app:layout_anchor="@+id/linearLayout"
                     app:layout_anchorGravity="center"
-                    app:srcCompat="@drawable/ic_restaurant_menu"
+                    app:srcCompat="@drawable/jugo"
                     tools:ignore="SpeakableTextPresentCheck" />
+
                 <ImageView
                     android:id="@+id/imageView2"
-                    android:layout_margin="10dp"
                     android:layout_width="100dp"
                     android:layout_height="100dp"
-                    android:onClick="llamarfragA"
+                    android:layout_margin="10dp"
                     android:elevation="20dp"
+                    android:onClick="llamarfragA"
                     app:layout_anchor="@+id/linearLayout"
                     app:layout_anchorGravity="center"
-                    app:srcCompat="@drawable/ic_restaurant_menu" />
+                    app:srcCompat="@drawable/jugo"
+                    tools:ignore="SpeakableTextPresentCheck" />
                 <ImageView
                     android:id="@+id/imageView3"
                     android:layout_width="100dp"
@@ -84,7 +86,7 @@
                     android:onClick="llamarfragB"
                     app:layout_anchor="@+id/linearLayout"
                     app:layout_anchorGravity="center"
-                    app:srcCompat="@drawable/ic_restaurant_menu"
+                    app:srcCompat="@drawable/barbacoa"
                     tools:ignore="SpeakableTextPresentCheck" />
                 <ImageView
                     android:id="@+id/imageView4"
@@ -94,7 +96,7 @@
                     android:onClick="llamarfragB"
                     app:layout_anchor="@+id/linearLayout"
                     app:layout_anchorGravity="center"
-                    app:srcCompat="@drawable/ic_restaurant_menu"
+                    app:srcCompat="@drawable/barbacoa"
                     tools:ignore="SpeakableTextPresentCheck" />
                 <ImageView
                     android:id="@+id/imageView5"
@@ -105,7 +107,7 @@
                     android:elevation="20dp"
                     app:layout_anchor="@+id/linearLayout"
                     app:layout_anchorGravity="center"
-                    app:srcCompat="@drawable/ic_restaurant_menu" />
+                    app:srcCompat="@drawable/postre" />
                 <ImageView
                     android:id="@+id/imageView6"
                     android:layout_margin="10dp"
@@ -115,9 +117,9 @@
                     android:elevation="20dp"
                     app:layout_anchor="@+id/linearLayout"
                     app:layout_anchorGravity="center"
-                    app:srcCompat="@drawable/ic_restaurant_menu" />
+                    app:srcCompat="@drawable/postre" />
                 <LinearLayout
-                    android:layout_width="100dp"
+                    android:layout_width="50dp"
                     android:layout_height="100dp"
                     android:layout_margin="10dp"/>
 

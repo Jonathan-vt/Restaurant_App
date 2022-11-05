@@ -72,7 +72,7 @@
                         android:layout_height="wrap_content"
                         android:gravity="center"
                         android:layout_weight="20"
-                        android:text="24.99"
+                        android:text="23.43"
                         android:textSize="30sp"
                         />
 
@@ -87,13 +87,13 @@
                             android:layout_height="0dp"
                             android:layout_weight="30"
                             android:textAlignment="center"
-                            android:text="@string/language_arepas"
+                            android:text="Carne asada"
                             android:autoSizeTextType="uniform"/>
                         <ImageView
                             android:layout_width="match_parent"
                             android:layout_height="0dp"
                             android:layout_weight="70"
-                            android:src="@drawable/arepas"/>
+                            android:src="@drawable/carne_asada"/>
                     </LinearLayout>
 
                     <EditText
@@ -118,7 +118,7 @@
                         android:layout_height="wrap_content"
                         android:gravity="center"
                         android:layout_weight="20"
-                        android:text="24.99"
+                        android:text="43.12"
                         android:textSize="30sp"
                         />
 
@@ -133,13 +133,13 @@
                             android:layout_height="0dp"
                             android:layout_weight="30"
                             android:textAlignment="center"
-                            android:text="@string/language_arepas"
+                            android:text="Bufalo"
                             android:autoSizeTextType="uniform"/>
                         <ImageView
                             android:layout_width="match_parent"
                             android:layout_height="0dp"
                             android:layout_weight="70"
-                            android:src="@drawable/arepas"/>
+                            android:src="@drawable/carne_de_bufalo"/>
                     </LinearLayout>
 
                     <EditText
@@ -164,7 +164,7 @@
                         android:layout_height="wrap_content"
                         android:gravity="center"
                         android:layout_weight="20"
-                        android:text="24.99"
+                        android:text="65.12"
                         android:textSize="30sp"
                         />
 
@@ -179,13 +179,13 @@
                             android:layout_height="0dp"
                             android:layout_weight="30"
                             android:textAlignment="center"
-                            android:text="@string/language_arepas"
+                            android:text="Carne en vino"
                             android:autoSizeTextType="uniform"/>
                         <ImageView
                             android:layout_width="match_parent"
                             android:layout_height="0dp"
                             android:layout_weight="70"
-                            android:src="@drawable/arepas"/>
+                            android:src="@drawable/carne_en_vino"/>
                     </LinearLayout>
 
                     <EditText
@@ -210,7 +210,7 @@
                         android:layout_height="wrap_content"
                         android:gravity="center"
                         android:layout_weight="20"
-                        android:text="24.99"
+                        android:text="47.38"
                         android:textSize="30sp"
                         />
 
@@ -225,13 +225,13 @@
                             android:layout_height="0dp"
                             android:layout_weight="30"
                             android:textAlignment="center"
-                            android:text="@string/language_arepas"
+                            android:text="Pastel de carne"
                             android:autoSizeTextType="uniform"/>
                         <ImageView
                             android:layout_width="match_parent"
                             android:layout_height="0dp"
                             android:layout_weight="70"
-                            android:src="@drawable/arepas"/>
+                            android:src="@drawable/pastel_carne"/>
                     </LinearLayout>
 
                     <EditText
@@ -256,7 +256,7 @@
                         android:layout_height="wrap_content"
                         android:gravity="center"
                         android:layout_weight="20"
-                        android:text="24.99"
+                        android:text="38.26"
                         android:textSize="30sp"
                         />
 
@@ -271,13 +271,13 @@
                             android:layout_height="0dp"
                             android:layout_weight="30"
                             android:textAlignment="center"
-                            android:text="@string/language_arepas"
+                            android:text="Rollitos de carne"
                             android:autoSizeTextType="uniform"/>
                         <ImageView
                             android:layout_width="match_parent"
                             android:layout_height="0dp"
                             android:layout_weight="70"
-                            android:src="@drawable/arepas"/>
+                            android:src="@drawable/rollitosconcarne"/>
                     </LinearLayout>
 
                     <EditText
