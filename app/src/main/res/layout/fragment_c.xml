@@ -72,7 +72,7 @@
                         android:layout_height="wrap_content"
                         android:gravity="center"
                         android:layout_weight="20"
-                        android:text="24.99"
+                        android:text="62.37"
                         android:textSize="30sp"
                         />
 
@@ -87,13 +87,13 @@
                             android:layout_height="0dp"
                             android:layout_weight="30"
                             android:textAlignment="center"
-                            android:text="@string/language_arepas"
+                            android:text="donuts"
                             android:autoSizeTextType="uniform"/>
                         <ImageView
                             android:layout_width="match_parent"
                             android:layout_height="0dp"
                             android:layout_weight="70"
-                            android:src="@drawable/arepas"/>
+                            android:src="@drawable/donuts"/>
                     </LinearLayout>
 
                     <EditText
@@ -118,7 +118,7 @@
                         android:layout_height="wrap_content"
                         android:gravity="center"
                         android:layout_weight="20"
-                        android:text="24.99"
+                        android:text="96.37"
                         android:textSize="30sp"
                         />
 
@@ -133,13 +133,13 @@
                             android:layout_height="0dp"
                             android:layout_weight="30"
                             android:textAlignment="center"
-                            android:text="@string/language_arepas"
+                            android:text="Arroz con leche"
                             android:autoSizeTextType="uniform"/>
                         <ImageView
                             android:layout_width="match_parent"
                             android:layout_height="0dp"
                             android:layout_weight="70"
-                            android:src="@drawable/arepas"/>
+                            android:src="@drawable/arrozcon_leche"/>
                     </LinearLayout>
 
                     <EditText
@@ -164,7 +164,7 @@
                         android:layout_height="wrap_content"
                         android:gravity="center"
                         android:layout_weight="20"
-                        android:text="24.99"
+                        android:text="36.75"
                         android:textSize="30sp"
                         />
 
@@ -179,13 +179,13 @@
                             android:layout_height="0dp"
                             android:layout_weight="30"
                             android:textAlignment="center"
-                            android:text="@string/language_arepas"
+                            android:text="Buñuelos"
                             android:autoSizeTextType="uniform"/>
                         <ImageView
                             android:layout_width="match_parent"
                             android:layout_height="0dp"
                             android:layout_weight="70"
-                            android:src="@drawable/arepas"/>
+                            android:src="@drawable/bunuelos"/>
                     </LinearLayout>
 
                     <EditText
@@ -210,7 +210,7 @@
                         android:layout_height="wrap_content"
                         android:gravity="center"
                         android:layout_weight="20"
-                        android:text="24.99"
+                        android:text="38.95"
                         android:textSize="30sp"
                         />
 
@@ -225,13 +225,13 @@
                             android:layout_height="0dp"
                             android:layout_weight="30"
                             android:textAlignment="center"
-                            android:text="@string/language_arepas"
+                            android:text="Flan"
                             android:autoSizeTextType="uniform"/>
                         <ImageView
                             android:layout_width="match_parent"
                             android:layout_height="0dp"
                             android:layout_weight="70"
-                            android:src="@drawable/arepas"/>
+                            android:src="@drawable/flan"/>
                     </LinearLayout>
 
                     <EditText
@@ -256,7 +256,7 @@
                         android:layout_height="wrap_content"
                         android:gravity="center"
                         android:layout_weight="20"
-                        android:text="24.99"
+                        android:text="75.24"
                         android:textSize="30sp"
                         />
 
@@ -271,13 +271,13 @@
                             android:layout_height="0dp"
                             android:layout_weight="30"
                             android:textAlignment="center"
-                            android:text="@string/language_arepas"
+                            android:text="Ponque Chocolate"
                             android:autoSizeTextType="uniform"/>
                         <ImageView
                             android:layout_width="match_parent"
                             android:layout_height="0dp"
                             android:layout_weight="70"
-                            android:src="@drawable/arepas"/>
+                            android:src="@drawable/ponque_chocolate"/>
                     </LinearLayout>
 
                     <EditText
