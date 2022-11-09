@@ -16,7 +16,7 @@
             android:id="@+id/toolbar"
             android:layout_width="match_parent"
             android:layout_height="?actionBarSize"
-            android:background="#4EE461"
+            android:background="?attr/colorPrimary"
             android:theme="@style/Theme.Restaurant_App.PopupOverlay"
             />
 
