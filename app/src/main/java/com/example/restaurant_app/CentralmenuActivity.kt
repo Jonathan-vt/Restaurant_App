@@ -14,7 +14,7 @@ class CentralmenuActivity : AppCompatActivity() {
         setContentView(R.layout.activity_centralmenu)
         setSupportActionBar(findViewById(R.id.toolbar))
 
-        //boton fltante
+        //boton flotante
         val floating: View = findViewById(R.id.floaButton)
         floating.setOnClickListener{View->
             val inten = Intent(this, MainActivity::class.java)
@@ -80,7 +80,6 @@ class CentralmenuActivity : AppCompatActivity() {
             true
         }
         else->{ super.onOptionsItemSelected(item) }
-
     }
 
 }
