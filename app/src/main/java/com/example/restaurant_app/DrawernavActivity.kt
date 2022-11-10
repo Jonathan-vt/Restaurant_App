@@ -42,7 +42,7 @@ class DrawernavActivity : AppCompatActivity() {
         //fragmetos del drawer
         appBarConfiguration = AppBarConfiguration(
             setOf(
-                R.id.nav_a, R.id.nav_b
+                R.id.fragmentA, R.id.fragmentB, R.id.fragmentC
             ), drawerLayout
         )
         setupActionBarWithNavController(navController, appBarConfiguration)

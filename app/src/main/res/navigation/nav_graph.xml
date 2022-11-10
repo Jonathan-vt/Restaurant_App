@@ -3,26 +3,25 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/nav_graph"
-    app:startDestination="@id/nav_a">
+    app:startDestination="@id/fragmentA">
+
 
     <fragment
-        android:id="@+id/nav_a"
-        android:name="com.example.restaurant_app.FirstFragment"
-        android:label="@string/first_fragment_label"
-        tools:layout="@layout/fragment_first">
+        android:id="@+id/fragmentC"
+        android:name="com.example.restaurant_app.FragmentC"
+        android:label="fragment_c"
+        tools:layout="@layout/fragment_c" />
 
-        <action
-            android:id="@+id/action_FirstFragment_to_SecondFragment"
-            app:destination="@id/nav_b" />
-    </fragment>
     <fragment
-        android:id="@+id/nav_b"
-        android:name="com.example.restaurant_app.SecondFragment"
-        android:label="@string/second_fragment_label"
-        tools:layout="@layout/fragment_second">
+        android:id="@+id/fragmentA"
+        android:name="com.example.restaurant_app.FragmentA"
+        android:label="fragment_a"
+        tools:layout="@layout/fragment_a" />
 
-        <action
-            android:id="@+id/action_SecondFragment_to_FirstFragment"
-            app:destination="@id/nav_a" />
-    </fragment>
+    <fragment
+        android:id="@+id/fragmentB"
+        android:name="com.example.restaurant_app.FragmentB"
+        android:label="fragment_b"
+        tools:layout="@layout/fragment_b" />
+
 </navigation>
