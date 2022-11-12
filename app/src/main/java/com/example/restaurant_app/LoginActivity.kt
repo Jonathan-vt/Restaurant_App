@@ -2,23 +2,42 @@ package com.example.restaurant_app
 
 import android.content.DialogInterface
 import android.content.Intent
+import android.database.sqlite.SQLiteDatabase
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.view.View
 import android.widget.EditText
 import android.widget.Toast
 import androidx.appcompat.app.AlertDialog
+import com.example.restaurant_app.databinding.ActivityLoginBinding
 
 class LoginActivity : AppCompatActivity() {
+    lateinit var binding: ActivityLoginBinding
+    lateinit var UsuariosDBHelper:miSQLiteHelper
+
     private var userInicio: EditText? = null
     private var passwordInicio: EditText? = null
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_login)
 
-        userInicio = findViewById(R.id.edit_inicio_user)
-        passwordInicio = findViewById(R.id.edit_inicio_password)
+        binding=ActivityLoginBinding.inflate(layoutInflater)
+        setContentView(binding.root)
+
+        userInicio = findViewById(R.id.edt_inicio_user)
+        passwordInicio = findViewById(R.id.edt_inicio_password)
+
+        binding.btnLogin.setOnClickListener{
+            val id=binding.edtInicioUser.text.toString().toInt()
+
+            val db: SQLiteDatabase =UsuariosDBHelper.readableDatabase
+            val cursor=db.rawQuery("SELECT * FROM Usuarios WHERE key_id="+id,null)
+            if (cursor.moveToFirst()) {
+                binding.edtInicioUser.setText(cursor.getString(1).toString())
+                binding.edtInicioPassword.setText(cursor.getString(2).toString())
+            }
+
+        }
 
     }
 
@@ -47,7 +66,8 @@ class LoginActivity : AppCompatActivity() {
         } else {
             Toast.makeText(this, R.string.language_incorrect_data, Toast.LENGTH_LONG).show()
         }
-    }//fin de la funcion
+    }
+
 
     //funcion para ir a registrar
     fun loginAregister(View: View)

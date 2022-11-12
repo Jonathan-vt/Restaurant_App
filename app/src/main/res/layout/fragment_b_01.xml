@@ -90,7 +90,7 @@
                         android:layout_height="0dp"
                         android:layout_weight="30"
                         android:textAlignment="center"
-                        android:text="Carne asada"
+                        android:text="@string/language_mineral_water"
                         android:textColor="?attr/colorOnSecondary"
                         android:textAppearance="@style/TextAppearance.AppCompat.SearchResult.Subtitle"
                         android:autoSizeTextType="uniform"/>
@@ -98,7 +98,7 @@
                         android:layout_width="match_parent"
                         android:layout_height="0dp"
                         android:layout_weight="70"
-                        android:src="@drawable/carne_asada"/>
+                        android:src="@drawable/b1_agua1500x1000"/>
                 </LinearLayout>
 
                 <EditText
@@ -140,7 +140,7 @@
                         android:layout_height="0dp"
                         android:layout_weight="30"
                         android:textAlignment="center"
-                        android:text="Bufalo"
+                        android:text="@string/language_lemonade"
                         android:textColor="?attr/colorOnSecondary"
                         android:textAppearance="@style/TextAppearance.AppCompat.SearchResult.Subtitle"
                         android:autoSizeTextType="uniform"/>
@@ -148,7 +148,7 @@
                         android:layout_width="match_parent"
                         android:layout_height="0dp"
                         android:layout_weight="70"
-                        android:src="@drawable/carne_de_bufalo"/>
+                        android:src="@drawable/b2_limonada1500x1000"/>
                 </LinearLayout>
 
                 <EditText
@@ -190,7 +190,7 @@
                         android:layout_height="0dp"
                         android:layout_weight="30"
                         android:textAlignment="center"
-                        android:text="Carne en vino"
+                        android:text="@string/language_fruit_juice"
                         android:textColor="?attr/colorOnSecondary"
                         android:textAppearance="@style/TextAppearance.AppCompat.SearchResult.Subtitle"
                         android:autoSizeTextType="uniform"/>
@@ -198,7 +198,7 @@
                         android:layout_width="match_parent"
                         android:layout_height="0dp"
                         android:layout_weight="70"
-                        android:src="@drawable/carne_en_vino"/>
+                        android:src="@drawable/b3_jugos1500x1000"/>
                 </LinearLayout>
 
                 <EditText
@@ -241,7 +241,7 @@
                         android:layout_height="0dp"
                         android:layout_weight="30"
                         android:textAlignment="center"
-                        android:text="Pastel de carne"
+                        android:text="@string/language_soda"
                         android:textColor="?attr/colorOnSecondary"
                         android:textAppearance="@style/TextAppearance.AppCompat.SearchResult.Subtitle"
                         android:autoSizeTextType="uniform"/>
@@ -249,7 +249,7 @@
                         android:layout_width="match_parent"
                         android:layout_height="0dp"
                         android:layout_weight="70"
-                        android:src="@drawable/pastel_carne"/>
+                        android:src="@drawable/b4_gaseosa1500x1000"/>
                 </LinearLayout>
 
                 <EditText
@@ -292,7 +292,7 @@
                         android:layout_height="0dp"
                         android:layout_weight="30"
                         android:textAlignment="center"
-                        android:text="Rollitos de carne"
+                        android:text="@string/language_beer"
                         android:textColor="?attr/colorOnSecondary"
                         android:textAppearance="@style/TextAppearance.AppCompat.SearchResult.Subtitle"
                         android:autoSizeTextType="uniform"/>
@@ -300,7 +300,7 @@
                         android:layout_width="match_parent"
                         android:layout_height="0dp"
                         android:layout_weight="70"
-                        android:src="@drawable/rollitosconcarne"/>
+                        android:src="@drawable/b5_cerveza1500x1000"/>
                 </LinearLayout>
 
                 <EditText
