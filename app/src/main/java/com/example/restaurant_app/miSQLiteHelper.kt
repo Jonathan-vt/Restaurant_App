@@ -12,7 +12,7 @@ class miSQLiteHelper(context: Context):SQLiteOpenHelper(context, "UsuariosDB",nu
     override fun onCreate(db: SQLiteDatabase?) {
         val ordenCreacion="CREATE TABLE Usuarios"+
                 "(key_id INTEGER PRIMARY KEY AUTOINCREMENT,"+
-                "Usuario TEXT, Correo TEXT, Contraseña TEXT)"
+                "Usuario TEXT, Correo TEXT, Contrasena TEXT)"
         db!!.execSQL(ordenCreacion)
     }
     // poner los datos de Usuarios en db
@@ -22,11 +22,11 @@ class miSQLiteHelper(context: Context):SQLiteOpenHelper(context, "UsuariosDB",nu
         onCreate(db)
     }
     //guardar un datos
-    fun GuardarDatos(Usuario:String,Correo:String,Contraseña:String){
+    fun GuardarDatos(Usuario:String,Correo:String,Contrasena:String){
         val datos=ContentValues() //mainipulacion de datos Clave Valor
-        datos.put("user",Usuario)
-        datos.put("email",Correo)
-        datos.put("password",Contraseña)
+        datos.put("Usuario",Usuario)
+        datos.put("Correo",Correo)
+        datos.put("Contraseña",Contrasena)
 
         val db=this.writableDatabase // la base de datos se pone en modo de escritura
         db.insert("Usuarios",null,datos)
@@ -42,13 +42,13 @@ class miSQLiteHelper(context: Context):SQLiteOpenHelper(context, "UsuariosDB",nu
         return borrardato // devuele el numero de elementos borrados
     }
     //editar dato
-    fun editarDato(id:Int, Usuario:String, Correo:String, Contraseña:String){
+    fun editarDato(id:Int, Usuario:String, Correo:String, Contrasena:String){
         val args = arrayOf(id.toString())
 
         val datos=ContentValues() //Nuevos parametros para actualizar
-        datos.put("user",Usuario)
-        datos.put("email",Correo)
-        datos.put("password",Contraseña)
+        datos.put("Usuario",Usuario)
+        datos.put("Correo",Correo)
+        datos.put("Contraseña",Contrasena)
         val db=writableDatabase // la base de datos se pone en modo de escritura
         db.update("Usuarios",datos,"key_id=?",args)
         db.close()

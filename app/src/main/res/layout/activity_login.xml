@@ -80,7 +80,6 @@
                 android:layout_marginVertical="0dp"
                 android:elevation="10dp"
                 android:background="@drawable/button_rounded"
-                android:onClick="loginAcentral"
                 android:text="@string/language_login" />
             <Button
                 android:id="@+id/btnToRegis"
@@ -118,6 +117,7 @@
 
             <ImageButton
                 android:id="@+id/loginBtnGoogle"
+                android:onClick="Acentral"
                 android:layout_width="0dp"
                 android:layout_height="match_parent"
                 android:layout_marginHorizontal="30dp"

@@ -15,66 +15,80 @@ class LoginActivity : AppCompatActivity() {
     lateinit var binding: ActivityLoginBinding
     lateinit var UsuariosDBHelper:miSQLiteHelper
 
-    private var userInicio: EditText? = null
-    private var passwordInicio: EditText? = null
-
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-
         binding=ActivityLoginBinding.inflate(layoutInflater)
         setContentView(binding.root)
 
-        userInicio = findViewById(R.id.edt_inicio_user)
-        passwordInicio = findViewById(R.id.edt_inicio_password)
-
+        UsuariosDBHelper= miSQLiteHelper(this)
+        // LOGIN ----------------------------------------------------------
         binding.btnLogin.setOnClickListener{
-            val id=binding.edtInicioUser.text.toString().toInt()
+            // varibles a validar
+            val nameInicio=binding.edtInicioUser.text.toString()
+            val passwInicio=binding.edtInicioPassword.text.toString()
 
+            // la base de datos se pone en modo de leectura
             val db: SQLiteDatabase =UsuariosDBHelper.readableDatabase
-            val cursor=db.rawQuery("SELECT * FROM Usuarios WHERE key_id="+id,null)
+
+            // Consulta a la base de datos local tipo SQL
+            val cursor=db.rawQuery("SELECT * FROM Usuarios WHERE Usuario='"
+                    + nameInicio + "' AND Contraseña='" + passwInicio + "'",null)
+
             if (cursor.moveToFirst()) {
-                binding.edtInicioUser.setText(cursor.getString(1).toString())
-                binding.edtInicioPassword.setText(cursor.getString(2).toString())
+                //ir a drawer navegation
+                val intentoADrawer = Intent(this, DrawernavActivity::class.java)
+                startActivity(intentoADrawer)
+                Toast.makeText(this, "Inicio exitoso: "+cursor.getString(1).toString(), Toast.LENGTH_SHORT).show()
+            }else{
+                Toast.makeText(this, "Usuario no encontrado", Toast.LENGTH_SHORT).show()
             }
+        }// LOGIN ----------------------------------------------------------
 
-        }
 
     }
 
-    //funcion para inicio de sesion
-    fun loginAcentral(xx: View)
+
+    // A central
+    fun Acentral(view: View)
     {
-        var username: String = userInicio!!.text.toString()
-        var password: String = passwordInicio!!.text.toString()
-
-        val btnPositivo = { xx: DialogInterface, yy: Int ->
-            val intentoADrawer = Intent(this, DrawernavActivity::class.java)
+            val intentoADrawer = Intent(this, CentralmenuActivity::class.java)
             startActivity(intentoADrawer)
-            Toast.makeText(this, "Inicio exitoso", Toast.LENGTH_LONG).show()
-        }
-        val btnNegativo = { nombre1: DialogInterface, nombre2: Int ->
-            Toast.makeText(this, "Cancelaste el ingreso", Toast.LENGTH_LONG).show()
-        }
-        if (username == "@2" && password == "22") {
-            Toast.makeText(this, "Credenciales validas", Toast.LENGTH_LONG).show()
-            val dialog = AlertDialog.Builder(this)
-                .setTitle("Bienvenido $username")
-                .setMessage("Estas seguro de entrar?")
-                .setPositiveButton("Confirmar", btnPositivo)
-                .setNegativeButton("Cancelar", btnNegativo)
-                .create().show()
-        } else {
-            Toast.makeText(this, R.string.language_incorrect_data, Toast.LENGTH_LONG).show()
-        }
     }
-
-
-    //funcion para ir a registrar
+    // A registrar
     fun loginAregister(View: View)
     {
         val intentoAregister = Intent(this, RegisterActivity::class.java)
         startActivity(intentoAregister)
-        Toast.makeText(this, "completa los datos", Toast.LENGTH_LONG).show()
+        Toast.makeText(this, "completa los datos", Toast.LENGTH_SHORT).show()
     }
 
 }
+
+/*
+//funcion para inicio de sesion anterior
+fun loginAcentral(xx: View)
+{
+    var username: String = userInicio!!.text.toString()
+    var password: String = passwordInicio!!.text.toString()
+
+    val btnPositivo = { xx: DialogInterface, yy: Int ->
+        val intentoADrawer = Intent(this, DrawernavActivity::class.java)
+        startActivity(intentoADrawer)
+        Toast.makeText(this, "Inicio exitoso", Toast.LENGTH_SHORT).show()
+    }
+    val btnNegativo = { nombre1: DialogInterface, nombre2: Int ->
+        Toast.makeText(this, "Cancelaste el ingreso", Toast.LENGTH_SHORT).show()
+    }
+    if (username == "@2" && password == "22") {
+        Toast.makeText(this, "Credenciales validas", Toast.LENGTH_SHORT).show()
+        val dialog = AlertDialog.Builder(this)
+            .setTitle("Bienvenido $username")
+            .setMessage("Estas seguro de entrar?")
+            .setPositiveButton("Confirmar", btnPositivo)
+            .setNegativeButton("Cancelar", btnNegativo)
+            .create().show()
+    } else {
+        Toast.makeText(this, R.string.language_incorrect_data, Toast.LENGTH_SHORT).show()
+    }
+}
+*/
