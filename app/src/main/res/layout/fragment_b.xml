@@ -5,20 +5,15 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:gravity="center"
     android:orientation="vertical"
     tools:context=".FragmentB">
 
-    <FrameLayout
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:layout_marginTop="60dp"
-        android:layout_marginHorizontal="10dp"
-        android:layout_marginBottom="10dp"
-        android:orientation="vertical">
-
         <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="40dp"
+            android:layout_height="0dp"
+            android:layout_weight="10"
+            android:gravity="center"
             android:background="#D95050"
             android:orientation="horizontal">
             <TextView
@@ -53,10 +48,11 @@
         </LinearLayout>
 
         <ScrollView
-            android:layout_marginTop="35dp"
+            android:layout_weight="80"
             android:layout_width="match_parent"
-            android:layout_height="match_parent">
+            android:layout_height="0dp">
             <LinearLayout
+                android:background="?attr/colorOnSecondary"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:orientation="vertical">
@@ -295,9 +291,11 @@
 
             </LinearLayout>
         </ScrollView>
+
         <LinearLayout
+            android:layout_weight="10"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
+            android:layout_height="0dp"
             android:layout_gravity="bottom|center"
             android:background="#D95050"
             android:orientation="horizontal">
@@ -305,7 +303,7 @@
                 android:id="@+id/button_cerrar_frag"
                 android:layout_margin="4dp"
                 android:layout_weight="1"
-                android:onClick="cerrarfrags"
+                android:onClick="cerrarfragss"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:text="@string/language_close"
@@ -320,7 +318,5 @@
                 />
 
         </LinearLayout>
-
-    </FrameLayout>
 
 </LinearLayout>

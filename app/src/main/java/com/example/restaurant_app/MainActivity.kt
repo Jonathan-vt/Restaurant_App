@@ -20,12 +20,4 @@ class MainActivity : AppCompatActivity() {
             Toast.makeText(this, "Inicia sesion o Registrate", Toast.LENGTH_SHORT).show()
     }
 
-    fun irADrawer(View:View)
-    {
-        Toast.makeText(this, "ir A Drawer", Toast.LENGTH_SHORT).show()
-        val intentoADrawer = Intent(this, DrawernavActivity::class.java)
-        startActivity(intentoADrawer)
-
-    }
-
 }

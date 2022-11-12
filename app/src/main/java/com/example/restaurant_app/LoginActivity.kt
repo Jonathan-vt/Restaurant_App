@@ -29,8 +29,8 @@ class LoginActivity : AppCompatActivity() {
         var password: String = passwordInicio!!.text.toString()
 
         val btnPositivo = { xx: DialogInterface, yy: Int ->
-            val intentoAcentral = Intent(this, CentralmenuActivity::class.java)
-            startActivity(intentoAcentral)
+            val intentoADrawer = Intent(this, DrawernavActivity::class.java)
+            startActivity(intentoADrawer)
             Toast.makeText(this, "Inicio exitoso", Toast.LENGTH_LONG).show()
         }
         val btnNegativo = { nombre1: DialogInterface, nombre2: Int ->
@@ -55,6 +55,6 @@ class LoginActivity : AppCompatActivity() {
         val intentoAregister = Intent(this, RegisterActivity::class.java)
         startActivity(intentoAregister)
         Toast.makeText(this, "completa los datos", Toast.LENGTH_LONG).show()
-    }//fin de la funcion
+    }
 
 }

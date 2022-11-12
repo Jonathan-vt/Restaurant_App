@@ -5,11 +5,14 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@drawable/wooden_board"
     tools:context=".DrawernavActivity">
 
     <com.google.android.material.appbar.AppBarLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:elevation="10dp"
+        android:layout_margin="10dp"
         android:theme="@style/Theme.Restaurant_App.AppBarOverlay">
 
         <androidx.appcompat.widget.Toolbar
@@ -22,7 +25,10 @@
 
     </com.google.android.material.appbar.AppBarLayout>
 
-    <include layout="@layout/content_drawernav" />
+    <include
+        android:id="@+id/include"
+        layout="@layout/content_drawernav"
+        app:layout_anchorGravity="center" />
 
     <com.google.android.material.floatingactionbutton.FloatingActionButton
         android:id="@+id/fab"
@@ -30,9 +36,8 @@
         android:layout_height="wrap_content"
         android:layout_gravity="bottom|end"
         android:layout_marginEnd="@dimen/fab_margin"
-        android:background="@color/OrangeRed"
         android:layout_marginBottom="16dp"
-        app:srcCompat="@android:drawable/ic_input_get"
+        app:srcCompat="@drawable/ic_lapiz"
         tools:ignore="ContentDescription,SpeakableTextPresentCheck" />
 
 </androidx.coordinatorlayout.widget.CoordinatorLayout>

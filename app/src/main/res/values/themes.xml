@@ -3,22 +3,21 @@
     <style name="Theme.Restaurant_App"
         parent="Base.Theme.AppCompat.Light.DarkActionBar">
         <!-- Primary brand color. -->
-        <item name="colorPrimary">@color/Goldenrod</item>
-        <item name="colorPrimaryVariant">@color/green</item>
-        <item name="colorOnPrimary">@color/white</item>
+        <item name="colorPrimary">@color/holo_orange_dark</item>
+        <item name="colorPrimaryVariant">@color/OrangeRed</item>
+        <item name="colorOnPrimary">@color/material_dynamic_neutral_variant20</item>
         <!-- Secondary brand color. -->
         <item name="colorSecondary">@color/Salmon</item>
-        <item name="colorSecondaryVariant">@color/SeaGreen</item>
-        <item name="colorOnSecondary">@color/black</item>
+        <item name="colorSecondaryVariant">@color/LightSalmon</item>
+        <item name="colorOnSecondary">@color/material_dynamic_neutral_variant40</item>
         <!-- Status bar color. -->
         <item name="android:statusBarColor">?attr/colorPrimaryVariant</item>
         <!-- Customize your theme here. -->
     </style>
 
     <style name="TextStyle" parent="@android:style/TextAppearance">
-
         <item name="android:textSize">20sp</item>
-        <item name="android:textColor">#aacbb4</item>
+        <item name="android:textColor">?attr/colorOnPrimary</item>
     </style>
 
     <style name="Theme.Restaurant_App.NoActionBar">
@@ -27,6 +26,6 @@
     </style>
 
     <style name="Theme.Restaurant_App.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
-
     <style name="Theme.Restaurant_App.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
+
 </resources>

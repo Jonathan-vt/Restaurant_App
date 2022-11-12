@@ -31,6 +31,8 @@ class DrawernavActivity : AppCompatActivity() {
         val floating: View = findViewById(R.id.fab)
         floating.setOnClickListener{View->
             Toast.makeText(this,"btn floltante", Toast.LENGTH_SHORT).show()
+            val intentoAcentral = Intent(this, CentralmenuActivity::class.java)
+            startActivity(intentoAcentral)
         }
 
         val drawerLayout:DrawerLayout=findViewById(R.id.drawerlayaut)
@@ -74,5 +76,22 @@ class DrawernavActivity : AppCompatActivity() {
             true
         }
         else->{ super.onOptionsItemSelected(item) }
+    }
+    //funcion cerrar fracmentosss
+    fun cerrarfragss(View:View){
+        supportFragmentManager.findFragmentById(R.id.frag_A_container)?.let {
+            supportFragmentManager.beginTransaction()
+                .remove(it)
+                .commit()
+            Toast.makeText(this,"fracmento removido", Toast.LENGTH_SHORT).show()
+        }
+    }
+    //funcion llamar fracmento B
+    fun llamarfragb(View:View){
+        supportFragmentManager.beginTransaction()
+            .setReorderingAllowed(true)
+            .add(R.id.frag_A_container,FragmentB::class.java,null,"Frag_B")
+            .commit()
+        Toast.makeText(this,"fracmento B", Toast.LENGTH_SHORT).show()
     }
 }

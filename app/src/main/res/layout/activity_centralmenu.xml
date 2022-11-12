@@ -5,149 +5,37 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/wooden_board"
     tools:context=".CentralmenuActivity">
 
-    <androidx.appcompat.widget.Toolbar
-        android:id="@+id/toolbar"
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/constraintLayout"
         android:layout_width="match_parent"
-        android:layout_height="?attr/actionBarSize"
-        android:background="#4EE461"
-        android:minHeight="?attr/actionBarSize"
-        android:elevation="15dp"
-        android:layout_margin="10dp"
-        app:popupTheme="@style/ThemeOverlay.AppCompat.ActionBar"
-        android:theme="@style/ThemeOverlay.AppCompat.ActionBar"
-        />
+        android:layout_height="match_parent">
 
-    <LinearLayout
-        android:id="@+id/linearLayout"
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:gravity="center"
-        android:orientation="vertical">
+        <TextView
+            android:id="@+id/textView3"
+            android:layout_width="324dp"
+            android:layout_height="119dp"
+            android:text="TextView"
+            app:layout_anchor="@+id/constraintLayout"
+            app:layout_anchorGravity="center"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            tools:layout_editor_absoluteY="413dp" />
 
-        <FrameLayout
-            android:id="@+id/frag_ABC_container"
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:layout_weight="20">
-
-        </FrameLayout>
-
-        <HorizontalScrollView
-            android:layout_weight="50"
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:layout_marginBottom="60dp"
-            android:layout_gravity="center">
-
-            <LinearLayout
-                android:layout_width="wrap_content"
-                android:layout_height="match_parent"
-                android:gravity="center"
-                android:orientation="horizontal">
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="324dp"
+            android:layout_height="117dp"
+            android:text="TextView"
+            app:layout_anchor="@+id/constraintLayout"
+            app:layout_anchorGravity="top|center"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            tools:layout_editor_absoluteY="113dp" />
 
 
-                <LinearLayout
-                    android:layout_width="50dp"
-                    android:layout_height="100dp"
-                    android:gravity="center"
-                    android:layout_margin="10dp"/>
-
-                <ImageView
-                    android:id="@+id/imageView1"
-                    android:layout_width="100dp"
-                    android:layout_height="100dp"
-                    android:layout_margin="10dp"
-                    android:onClick="llamarfragA"
-                    android:elevation="20dp"
-                    app:layout_anchor="@+id/linearLayout"
-                    app:layout_anchorGravity="center"
-                    app:srcCompat="@drawable/jugo"
-                    tools:ignore="SpeakableTextPresentCheck" />
-
-                <ImageView
-                    android:id="@+id/imageView2"
-                    android:layout_width="100dp"
-                    android:layout_height="100dp"
-                    android:layout_margin="10dp"
-                    android:elevation="20dp"
-                    android:onClick="llamarfragA"
-                    app:layout_anchor="@+id/linearLayout"
-                    app:layout_anchorGravity="center"
-                    app:srcCompat="@drawable/jugo"
-                    tools:ignore="SpeakableTextPresentCheck" />
-                <ImageView
-                    android:id="@+id/imageView3"
-                    android:layout_width="100dp"
-                    android:layout_height="100dp"
-                    android:layout_margin="10dp"
-                    android:onClick="llamarfragB"
-                    app:layout_anchor="@+id/linearLayout"
-                    app:layout_anchorGravity="center"
-                    app:srcCompat="@drawable/barbacoa"
-                    tools:ignore="SpeakableTextPresentCheck" />
-                <ImageView
-                    android:id="@+id/imageView4"
-                    android:layout_width="100dp"
-                    android:layout_height="100dp"
-                    android:layout_margin="10dp"
-                    android:onClick="llamarfragB"
-                    app:layout_anchor="@+id/linearLayout"
-                    app:layout_anchorGravity="center"
-                    app:srcCompat="@drawable/barbacoa"
-                    tools:ignore="SpeakableTextPresentCheck" />
-                <ImageView
-                    android:id="@+id/imageView5"
-                    android:layout_margin="10dp"
-                    android:layout_width="100dp"
-                    android:layout_height="100dp"
-                    android:onClick="llamarfragC"
-                    android:elevation="20dp"
-                    app:layout_anchor="@+id/linearLayout"
-                    app:layout_anchorGravity="center"
-                    app:srcCompat="@drawable/postre" />
-                <ImageView
-                    android:id="@+id/imageView6"
-                    android:layout_margin="10dp"
-                    android:layout_width="100dp"
-                    android:layout_height="100dp"
-                    android:onClick="llamarfragC"
-                    android:elevation="20dp"
-                    app:layout_anchor="@+id/linearLayout"
-                    app:layout_anchorGravity="center"
-                    app:srcCompat="@drawable/postre" />
-                <LinearLayout
-                    android:layout_width="50dp"
-                    android:layout_height="100dp"
-                    android:layout_margin="10dp"/>
-
-            </LinearLayout>
-        </HorizontalScrollView>
-
-
-    </LinearLayout>
-
-    <com.google.android.material.floatingactionbutton.FloatingActionButton
-        android:id="@+id/floaButton"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_gravity="bottom|end"
-        android:layout_marginStart="10dp"
-        android:layout_marginTop="10dp"
-        android:layout_marginEnd="10dp"
-        android:layout_marginBottom="10dp"
-        android:backgroundTint="@color/material_dynamic_primary30"
-        android:clickable="true"
-        android:contentDescription="@string/language_boton_flotante"
-        android:elevation="10dp"
-        android:focusable="true"
-        android:minWidth="48dp"
-        android:minHeight="48dp"
-        app:srcCompat="@drawable/ic_lapiz"
-        tools:ignore="RedundantDescriptionCheck" />
-
+    </androidx.constraintlayout.widget.ConstraintLayout>
 
 
 
