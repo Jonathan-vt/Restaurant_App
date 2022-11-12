@@ -7,7 +7,7 @@
     <string name="language_login">Ingresar</string>
     <string name="language_error">Error</string>
     <string name="language_incorrect_data">Datos incorrectos</string>
-    <string name="language_welcome">Bienvenidos</string>
+    <string name="language_welcome">Bienvenidos \n A</string>
     <string name="language_sign_in">Registrarse</string>
     <string name="language_touch_advance">toca para avanzar</string>
     <string name="language_menu">Menu</string>
@@ -15,4 +15,22 @@
     <string name="language_confirm_password">Confirmar contraseña</string>
     <string name="language_login_register">Inicia sesion o Registrate</string>
     <string name="language_to_register">Ir a Registrarse</string>
+    <string name="language_boton_flotante">Button Floting</string>
+    <string name="language_close">Cerrar</string>
+    <string name="language_arepas">Arepas</string>
+    <string name="language_tacos">Tacos</string>
+    <string name="language_rice">Arroz</string>
+    <string name="language_salads">Ensaladas</string>
+    <string name="language_pasta">Pastas</string>
+    <string name="language_potato_chips">Papas Fritas</string>
+    <string name="language_Burgers">Hamburguesas</string>
+    <string name="language_drinks">Bebidas</string>
+    <string name="language_select_preference">Seleccione su Preferencia</string>
+    <string name="language_mineral_water">Agua Mineral</string>
+    <string name="language_beer">Cerveza</string>
+    <string name="language_lemonade">Limonada</string>
+    <string name="language_soda">Gaseosa</string>
+    <string name="language_fruit_juice">Jugo de Frutas</string>
+    <string name="language_next">Siguiente</string>
+    <string name="language_previous">Anterior</string>
 </resources>

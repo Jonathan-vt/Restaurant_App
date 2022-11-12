@@ -1,27 +1,27 @@
 package com.example.restaurant_app
 
 import android.content.Intent
+import android.database.sqlite.SQLiteDatabase
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.view.Menu
 import android.view.MenuItem
 import android.view.View
 import android.widget.Toast
+import com.example.restaurant_app.databinding.ActivityCentralmenuBinding
 
 class CentralmenuActivity : AppCompatActivity() {
+    lateinit var binding:ActivityCentralmenuBinding
+    lateinit var amigosDBHelper:miSQLiteHelper
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
+
         setContentView(R.layout.activity_centralmenu)
-        setSupportActionBar(findViewById(R.id.toolbar))
 
-        val floating: View = findViewById(R.id.floaButton)
-        floating.setOnClickListener{View->
-            val inten = Intent(this, MainActivity::class.java)
-            startActivity(inten)
-        }
+
+
     }
-
-
     //funcion menu en barra
     override fun onCreateOptionsMenu(menu: Menu?): Boolean {
         menuInflater.inflate(R.menu.menu_barra,menu)
@@ -41,7 +41,8 @@ class CentralmenuActivity : AppCompatActivity() {
             true
         }
         else->{ super.onOptionsItemSelected(item) }
-
     }
+
+
 
 }

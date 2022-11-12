@@ -7,12 +7,32 @@
     <string name="language_login">Login</string>
     <string name="language_error">Error</string>
     <string name="language_incorrect_data">Incorrect data</string>
-    <string name="language_welcome">Welcome</string>
-    <string name="language_sign_in">sign in</string>
+    <string name="language_welcome">Welcome \n to</string>
+    <string name="language_sign_in">Sign in</string>
     <string name="language_touch_advance">Touch To Advance</string>
-    <string name="language_menu">menu</string>
-    <string name="language_email">email</string>
+    <string name="language_menu">Menu</string>
+    <string name="language_email">Email</string>
     <string name="language_confirm_password">Confirm Password</string>
     <string name="language_login_register">Login or  Register</string>
     <string name="language_to_register">To Register</string>
+    <string name="language_boton_flotante">Button Floting</string>
+    <string name="language_close">Close</string>
+    <string name="language_arepas">Arepas</string>
+    <string name="language_tacos">Tacos</string>
+    <string name="language_rice">Rice</string>
+    <string name="language_salads">Salads</string>
+    <string name="language_pasta">Pasta</string>
+    <string name="language_potato_chips">Potato Chips</string>
+    <string name="language_Burgers">Burgers</string>
+    <string name="language_drinks">Drinks</string>
+    <string name="language_select_preference">Select your Preference</string>
+    <string name="language_mineral_water">Mineral Water</string>
+    <string name="language_beer">Beer</string>
+    <string name="language_lemonade">Lemonade</string>
+    <string name="language_soda">Soda</string>
+    <string name="language_fruit_juice">Fruit Juice</string>
+    <string name="language_next">Next</string>
+    <string name="language_previous">Previous</string>
+    <string name="title_activity_drawernav" translatable="false">DrawernavActivity</string>
+    <!-- TODO: Remove or change this placeholder text -->
 </resources>
