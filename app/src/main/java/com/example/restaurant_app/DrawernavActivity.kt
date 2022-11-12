@@ -77,8 +77,8 @@ class DrawernavActivity : AppCompatActivity() {
         }
         else->{ super.onOptionsItemSelected(item) }
     }
-    //funcion cerrar fracmentosss
-    fun cerrarfragss(View:View){
+    //funcion cerrar fracments en A
+    fun cerrarfragsA(View:View){
         supportFragmentManager.findFragmentById(R.id.frag_A_container)?.let {
             supportFragmentManager.beginTransaction()
                 .remove(it)
@@ -86,12 +86,46 @@ class DrawernavActivity : AppCompatActivity() {
             Toast.makeText(this,"fracmento removido", Toast.LENGTH_SHORT).show()
         }
     }
-    //funcion llamar fracmento B
-    fun llamarfragb(View:View){
+    //funcion llamar fracmento A_01
+    fun llamarFragA01(View:View){
         supportFragmentManager.beginTransaction()
             .setReorderingAllowed(true)
-            .add(R.id.frag_A_container,FragmentB::class.java,null,"Frag_B")
+            .add(R.id.frag_A_container,A_01Fragment::class.java,null,"Frag_B")
             .commit()
-        Toast.makeText(this,"fracmento B", Toast.LENGTH_SHORT).show()
+        Toast.makeText(this,"fracmento A1", Toast.LENGTH_SHORT).show()
+    }
+    //funcion cerrar fracments en B
+    fun cerrarfragsB(View:View){
+        supportFragmentManager.findFragmentById(R.id.frag_B_container)?.let {
+            supportFragmentManager.beginTransaction()
+                .remove(it)
+                .commit()
+            Toast.makeText(this,"fracmento removido", Toast.LENGTH_SHORT).show()
+        }
+    }
+    //funcion llamar fracmento B_01
+    fun llamarFragB01(View:View){
+        supportFragmentManager.beginTransaction()
+            .setReorderingAllowed(true)
+            .add(R.id.frag_B_container,B_01Fragment::class.java,null,"Frag_B")
+            .commit()
+        Toast.makeText(this,"fracmento B1", Toast.LENGTH_SHORT).show()
+    }
+    //funcion cerrar fracments en C
+    fun cerrarfragsC(View:View){
+        supportFragmentManager.findFragmentById(R.id.frag_C_container)?.let {
+            supportFragmentManager.beginTransaction()
+                .remove(it)
+                .commit()
+            Toast.makeText(this,"fracmento removido", Toast.LENGTH_SHORT).show()
+        }
+    }
+    //funcion llamar fracmento C_01
+    fun llamarFragC01(View:View){
+        supportFragmentManager.beginTransaction()
+            .setReorderingAllowed(true)
+            .add(R.id.frag_C_container,C_01Fragment::class.java,null,"Frag_B")
+            .commit()
+        Toast.makeText(this,"fracmento C1", Toast.LENGTH_SHORT).show()
     }
 }

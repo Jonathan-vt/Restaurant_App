@@ -3,6 +3,7 @@
 
     <!-- Android style -->
     <color name="android_green">#A4C639</color>
+    <color name="Trasparent">#51FA8072</color>
 
     <!-- Android Holo style -->
     <color name="holo_blue_bright">#ff00ddff</color>

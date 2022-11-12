@@ -6,17 +6,18 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 
+class C_01Fragment : Fragment() {
 
-class FragmentB : Fragment() {
-
-    // crear Fragment
+    //crear fragment
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
     }
     // mostrar fragment
-    override fun onCreateView(inflater:LayoutInflater, container:ViewGroup?, savedInstanceState:Bundle?):View?
-    {
-        return inflater.inflate(R.layout.fragment_b, container, false)
+    override fun onCreateView(
+        inflater: LayoutInflater, container: ViewGroup?,
+        savedInstanceState: Bundle?
+    ): View? {
+        return inflater.inflate(R.layout.fragment_c_01, container, false)
     }
 
 

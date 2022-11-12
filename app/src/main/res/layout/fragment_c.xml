@@ -6,368 +6,65 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
+    android:gravity="center"
     tools:context=".FragmentC">
 
     <FrameLayout
+        android:id="@+id/frag_C_container"
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:layout_marginTop="60dp"
+        android:layout_height="0dp"
+        android:layout_weight="70"
         android:layout_marginHorizontal="10dp"
-        android:layout_marginBottom="10dp"
-        android:orientation="vertical">
-
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="40dp"
-            android:background="#D95050"
-            android:orientation="horizontal">
-            <TextView
-                android:layout_width="0dp"
-                android:layout_height="match_parent"
-                android:textAlignment="center"
-                android:layout_weight="25"
-                android:layout_marginHorizontal="5dp"
-                android:text="$"
-                android:textColor="#50E90E"
-                android:textSize="25sp">
-            </TextView>
-            <TextView
-                android:layout_width="0dp"
-                android:layout_height="match_parent"
-                android:textAlignment="center"
-                android:layout_weight="50"
-                android:text="Product"
-                android:textColor="#50E90E"
-                android:textSize="25sp">
-            </TextView>
-            <TextView
-                android:layout_width="0dp"
-                android:layout_height="match_parent"
-                android:textAlignment="center"
-                android:layout_weight="25"
-                android:text="Cant"
-                android:layout_marginHorizontal="5dp"
-                android:textColor="#50E90E"
-                android:textSize="25sp">
-            </TextView>
-        </LinearLayout>
-
-        <ScrollView
-            android:layout_marginTop="35dp"
-            android:layout_width="match_parent"
-            android:layout_height="match_parent">
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:orientation="vertical">
-
-                <LinearLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:orientation="horizontal"
-                    android:layout_margin="5dp"
-                    android:gravity="center">
-                    <TextView
-                        android:layout_width="0dp"
-                        android:layout_height="wrap_content"
-                        android:gravity="center"
-                        android:layout_weight="20"
-                        android:text="62.37"
-                        android:textSize="30sp"
-                        />
-
-                    <LinearLayout
-                        android:layout_width="0dp"
-                        android:layout_height="100dp"
-                        android:layout_weight="40"
-                        android:orientation="vertical"
-                        android:layout_marginTop="0dp">
-                        <TextView
-                            android:layout_width="match_parent"
-                            android:layout_height="0dp"
-                            android:layout_weight="30"
-                            android:textAlignment="center"
-                            android:text="donuts"
-                            android:autoSizeTextType="uniform"/>
-                        <ImageView
-                            android:layout_width="match_parent"
-                            android:layout_height="0dp"
-                            android:layout_weight="70"
-                            android:src="@drawable/donuts"/>
-                    </LinearLayout>
-
-
-                    <EditText
-                        android:layout_width="0dp"
-                        android:layout_height="wrap_content"
-                        android:layout_weight="20"
-                        android:ems="10"
-                        android:gravity="center"
-                        android:inputType="number"
-                        android:minHeight="48dp"
-                        tools:ignore="SpeakableTextPresentCheck" />
-                </LinearLayout>
-                <LinearLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:orientation="horizontal"
-                    android:layout_margin="5dp"
-                    android:gravity="center">
-                    <TextView
-                        android:layout_width="0dp"
-                        android:layout_height="wrap_content"
-                        android:gravity="center"
-                        android:layout_weight="20"
-                        android:text="62.37"
-                        android:textSize="30sp"
-                        />
-
-                    <LinearLayout
-                        android:layout_width="0dp"
-                        android:layout_height="100dp"
-                        android:layout_weight="40"
-                        android:orientation="vertical"
-                        android:layout_marginTop="0dp">
-                        <TextView
-                            android:layout_width="match_parent"
-                            android:layout_height="0dp"
-                            android:layout_weight="30"
-                            android:textAlignment="center"
-                            android:text="donuts"
-                            android:autoSizeTextType="uniform"/>
-                        <ImageView
-                            android:layout_width="match_parent"
-                            android:layout_height="0dp"
-                            android:layout_weight="70"
-                            android:src="@drawable/donuts"/>
-                    </LinearLayout>
-
-
-                    <EditText
-                        android:id="@+id/Number_ar2"
-                        android:layout_width="0dp"
-                        android:layout_height="wrap_content"
-                        android:layout_weight="20"
-                        android:ems="10"
-                        android:gravity="center"
-                        android:inputType="number"
-                        android:minHeight="48dp"
-                        tools:ignore="SpeakableTextPresentCheck" />
-                </LinearLayout>
-                <LinearLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:orientation="horizontal"
-                    android:layout_margin="5dp"
-                    android:gravity="center">
-                    <TextView
-                        android:layout_width="0dp"
-                        android:layout_height="wrap_content"
-                        android:gravity="center"
-                        android:layout_weight="20"
-                        android:text="96.37"
-                        android:textSize="30sp"
-                        />
-
-                    <LinearLayout
-                        android:layout_width="0dp"
-                        android:layout_height="100dp"
-                        android:layout_weight="40"
-                        android:orientation="vertical"
-                        android:layout_marginTop="0dp">
-                        <TextView
-                            android:layout_width="match_parent"
-                            android:layout_height="0dp"
-                            android:layout_weight="30"
-                            android:textAlignment="center"
-                            android:text="Arroz con leche"
-                            android:autoSizeTextType="uniform"/>
-                        <ImageView
-                            android:layout_width="match_parent"
-                            android:layout_height="0dp"
-                            android:layout_weight="70"
-                            android:src="@drawable/arrozcon_leche"/>
-                    </LinearLayout>
-
-                    <EditText
-                        android:id="@+id/Number_ar5"
-                        android:layout_width="0dp"
-                        android:layout_height="wrap_content"
-                        android:layout_weight="20"
-                        android:ems="10"
-                        android:gravity="center"
-                        android:inputType="number"
-                        android:minHeight="48dp"
-                        tools:ignore="SpeakableTextPresentCheck" />
-                </LinearLayout>
-                <LinearLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:orientation="horizontal"
-                    android:layout_margin="5dp"
-                    android:gravity="center">
-                    <TextView
-                        android:layout_width="0dp"
-                        android:layout_height="wrap_content"
-                        android:gravity="center"
-                        android:layout_weight="20"
-                        android:text="36.75"
-                        android:textSize="30sp"
-                        />
-
-                    <LinearLayout
-                        android:layout_width="0dp"
-                        android:layout_height="100dp"
-                        android:layout_weight="40"
-                        android:orientation="vertical"
-                        android:layout_marginTop="0dp">
-                        <TextView
-                            android:layout_width="match_parent"
-                            android:layout_height="0dp"
-                            android:layout_weight="30"
-                            android:textAlignment="center"
-                            android:text="Buñuelos"
-                            android:autoSizeTextType="uniform"/>
-                        <ImageView
-                            android:layout_width="match_parent"
-                            android:layout_height="0dp"
-                            android:layout_weight="70"
-                            android:src="@drawable/bunuelos"/>
-                    </LinearLayout>
-
-                    <EditText
-                        android:id="@+id/Number_ar3"
-                        android:layout_width="0dp"
-                        android:layout_height="wrap_content"
-                        android:layout_weight="20"
-                        android:ems="10"
-                        android:gravity="center"
-                        android:inputType="number"
-                        android:minHeight="48dp"
-                        tools:ignore="SpeakableTextPresentCheck" />
-                </LinearLayout>
-                <LinearLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:orientation="horizontal"
-                    android:layout_margin="5dp"
-                    android:gravity="center">
-                    <TextView
-                        android:layout_width="0dp"
-                        android:layout_height="wrap_content"
-                        android:gravity="center"
-                        android:layout_weight="20"
-                        android:text="38.95"
-                        android:textSize="30sp"
-                        />
-
-                    <LinearLayout
-                        android:layout_width="0dp"
-                        android:layout_height="100dp"
-                        android:layout_weight="40"
-                        android:orientation="vertical"
-                        android:layout_marginTop="0dp">
-                        <TextView
-                            android:layout_width="match_parent"
-                            android:layout_height="0dp"
-                            android:layout_weight="30"
-                            android:textAlignment="center"
-                            android:text="Flan"
-                            android:autoSizeTextType="uniform"/>
-                        <ImageView
-                            android:layout_width="match_parent"
-                            android:layout_height="0dp"
-                            android:layout_weight="70"
-                            android:src="@drawable/flan"/>
-                    </LinearLayout>
-
-                    <EditText
-                        android:id="@+id/Number_ar4"
-                        android:layout_width="0dp"
-                        android:layout_height="wrap_content"
-                        android:layout_weight="20"
-                        android:ems="10"
-                        android:gravity="center"
-                        android:inputType="number"
-                        android:minHeight="48dp"
-                        tools:ignore="SpeakableTextPresentCheck" />
-                </LinearLayout>
-                <LinearLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:orientation="horizontal"
-                    android:layout_margin="5dp"
-                    android:gravity="center">
-                    <TextView
-                        android:layout_width="0dp"
-                        android:layout_height="wrap_content"
-                        android:gravity="center"
-                        android:layout_weight="20"
-                        android:text="75.24"
-                        android:textSize="30sp"
-                        />
-
-                    <LinearLayout
-                        android:layout_width="0dp"
-                        android:layout_height="100dp"
-                        android:layout_weight="40"
-                        android:orientation="vertical"
-                        android:layout_marginTop="0dp">
-                        <TextView
-                            android:layout_width="match_parent"
-                            android:layout_height="0dp"
-                            android:layout_weight="30"
-                            android:textAlignment="center"
-                            android:text="Ponque Chocolate"
-                            android:autoSizeTextType="uniform"/>
-                        <ImageView
-                            android:layout_width="match_parent"
-                            android:layout_height="0dp"
-                            android:layout_weight="70"
-                            android:src="@drawable/ponque_chocolate"/>
-                    </LinearLayout>
-
-                    <EditText
-                        android:id="@+id/Number_ar"
-                        android:layout_width="0dp"
-                        android:layout_height="wrap_content"
-                        android:layout_weight="20"
-                        android:ems="10"
-                        android:gravity="center"
-                        android:inputType="number"
-                        android:minHeight="48dp"
-                        tools:ignore="SpeakableTextPresentCheck" />
-                </LinearLayout>
-
-
-            </LinearLayout>
-        </ScrollView>
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_gravity="bottom|center"
-            android:background="#D95050"
-            android:orientation="horizontal">
-            <Button
-                android:id="@+id/button_cerrar_frag"
-                android:layout_margin="4dp"
-                android:layout_weight="1"
-                android:onClick="cerrarfrags"
-                android:layout_width="0dp"
-                android:layout_height="wrap_content"
-                android:text="@string/language_close"
-                />
-            <Button
-                android:id="@+id/button_añadir"
-                android:layout_margin="4dp"
-                android:layout_weight="1"
-                android:layout_width="0dp"
-                android:layout_height="wrap_content"
-                android:text="añadir"
-                />
-
-        </LinearLayout>
-
+        >
     </FrameLayout>
+
+    <HorizontalScrollView
+        android:layout_weight="30"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        tools:ignore="UselessParent">
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_margin="5dp"
+            android:gravity="top"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:layout_width="50dp"
+                android:layout_height="100dp"
+                android:layout_margin="10dp" />
+
+            <ImageView
+                android:id="@+id/imageView1"
+                android:onClick="llamarFragC01"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_margin="10dp"
+                android:elevation="20dp"
+                app:srcCompat="@drawable/postre" />
+            <ImageView
+                android:id="@+id/imageView2"
+                android:onClick="llamarFragC01"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_margin="10dp"
+                app:srcCompat="@drawable/postre" />
+            <ImageView
+                android:id="@+id/imageView3"
+                android:onClick="llamarFragC01"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_margin="10dp"
+                android:elevation="20dp"
+                app:srcCompat="@drawable/postre" />
+
+            <LinearLayout
+                android:layout_width="50dp"
+                android:layout_height="100dp"
+                android:layout_margin="10dp" />
+
+        </LinearLayout>
+    </HorizontalScrollView>
 
 </LinearLayout>

@@ -9,13 +9,11 @@ import android.view.ViewGroup
 
 class FragmentC : Fragment() {
 
-    //funcion crear Fragment
+    // crear Fragment
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
     }
-
-
-    // funcion mostrar fragment
+    // mostrar fragment
     override fun onCreateView(inflater:LayoutInflater, container:ViewGroup?, savedInstanceState:Bundle?):View?
     {
         return inflater.inflate(R.layout.fragment_c, container, false)

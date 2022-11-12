@@ -5,11 +5,11 @@
         <!-- Primary brand color. -->
         <item name="colorPrimary">@color/holo_orange_dark</item>
         <item name="colorPrimaryVariant">@color/OrangeRed</item>
-        <item name="colorOnPrimary">@color/material_dynamic_neutral_variant20</item>
+        <item name="colorOnPrimary">@color/material_dynamic_neutral_variant80</item>
         <!-- Secondary brand color. -->
-        <item name="colorSecondary">@color/Salmon</item>
-        <item name="colorSecondaryVariant">@color/LightSalmon</item>
-        <item name="colorOnSecondary">@color/material_dynamic_neutral_variant40</item>
+        <item name="colorSecondary">@color/LightSalmon</item>
+        <item name="colorSecondaryVariant">@color/Salmon</item>
+        <item name="colorOnSecondary">@color/material_dynamic_neutral_variant20</item>
         <!-- Status bar color. -->
         <item name="android:statusBarColor">?attr/colorPrimaryVariant</item>
         <!-- Customize your theme here. -->

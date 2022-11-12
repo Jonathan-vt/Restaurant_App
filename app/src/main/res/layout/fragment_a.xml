@@ -14,7 +14,7 @@
         android:layout_width="match_parent"
         android:layout_height="0dp"
         android:layout_weight="70"
-        android:layout_margin="10dp"
+        android:layout_marginHorizontal="10dp"
         >
     </FrameLayout>
 
@@ -23,14 +23,12 @@
         android:layout_width="match_parent"
         android:layout_height="0dp"
         tools:ignore="UselessParent">
-
         <LinearLayout
             android:layout_width="wrap_content"
             android:layout_height="match_parent"
             android:layout_margin="5dp"
             android:gravity="top"
             android:orientation="horizontal">
-
 
             <LinearLayout
                 android:layout_width="50dp"
@@ -39,27 +37,28 @@
 
             <ImageView
                 android:id="@+id/imageView1"
+                android:onClick="llamarFragA01"
                 android:layout_width="100dp"
                 android:layout_height="100dp"
                 android:layout_margin="10dp"
                 android:elevation="20dp"
-                app:srcCompat="@drawable/jugo" />
-
+                app:srcCompat="@drawable/barbacoa" />
             <ImageView
                 android:id="@+id/imageView2"
+                android:onClick="llamarFragA01"
                 android:layout_width="100dp"
                 android:layout_height="100dp"
                 android:layout_margin="10dp"
-                android:onClick="llamarfragb"
                 app:srcCompat="@drawable/barbacoa" />
-
             <ImageView
                 android:id="@+id/imageView3"
+                android:onClick="llamarFragA01"
                 android:layout_width="100dp"
                 android:layout_height="100dp"
                 android:layout_margin="10dp"
                 android:elevation="20dp"
-                app:srcCompat="@drawable/postre" />
+                app:srcCompat="@drawable/barbacoa" />
+
             <LinearLayout
                 android:layout_width="50dp"
                 android:layout_height="100dp"

@@ -3,28 +3,25 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/nav_graph"
-    app:startDestination="@id/fragmentA"
-    >
-
-    <fragment
-        android:id="@+id/fragmentC"
-        android:name="com.example.restaurant_app.FragmentC"
-        android:label="C"
-        tools:layout="@layout/fragment_c"
-        />
+    app:startDestination="@id/fragmentA">
 
     <fragment
         android:id="@+id/fragmentA"
         android:name="com.example.restaurant_app.FragmentA"
-        android:label="A"
+        android:label="Platos principales"
         tools:layout="@layout/fragment_a"
         />
-
     <fragment
         android:id="@+id/fragmentB"
         android:name="com.example.restaurant_app.FragmentB"
-        android:label="B"
+        android:label="Bebidas"
         tools:layout="@layout/fragment_b"
+        />
+    <fragment
+        android:id="@+id/fragmentC"
+        android:name="com.example.restaurant_app.FragmentC"
+        android:label="Postres"
+        tools:layout="@layout/fragment_c"
         />
 
 </navigation>
