@@ -1,52 +1,60 @@
 package com.example.restaurant_app
 
-import android.content.DialogInterface
 import android.content.Intent
-import android.database.sqlite.SQLiteDatabase
-import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.view.View
-import android.widget.EditText
 import android.widget.Toast
-import androidx.appcompat.app.AlertDialog
+import androidx.appcompat.app.AppCompatActivity
 import com.example.restaurant_app.databinding.ActivityLoginBinding
+import com.google.firebase.firestore.FieldPath
+import com.google.firebase.firestore.FirebaseFirestore
 
 class LoginActivity : AppCompatActivity() {
     lateinit var binding: ActivityLoginBinding
-    lateinit var UsuariosDBHelper:miSQLiteHelper
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        binding=ActivityLoginBinding.inflate(layoutInflater)
+        binding = ActivityLoginBinding.inflate(layoutInflater)
         setContentView(binding.root)
 
-        UsuariosDBHelper= miSQLiteHelper(this)
-        // LOGIN ----------------------------------------------------------
-        binding.btnLogin.setOnClickListener{
+        val db: FirebaseFirestore = FirebaseFirestore.getInstance()
+
+        // LOGIN -----------------------------------------------------------------------------------
+        binding.btnLogin.setOnClickListener {
             // varibles a validar
-            val nameInicio=binding.edtInicioUser.text.toString()
-            val passwInicio=binding.edtInicioPassword.text.toString()
+            val nameInicio = binding.edtInicioUser.text.toString()
+            val passwInicio = binding.edtInicioPassword.text.toString()
 
-            // la base de datos se pone en modo de leectura
-            val db: SQLiteDatabase =UsuariosDBHelper.readableDatabase
+            if (nameInicio.isNotBlank() && passwInicio.isNotBlank()) {
 
-            // Consulta a la base de datos local tipo SQL
-            val cursor=db.rawQuery("SELECT * FROM Usuarios WHERE Usuario='"
-                    + nameInicio + "' AND Contraseña='" + passwInicio + "'",null)
+                db.collection("DatosAppR")
+                    .document(nameInicio)
+                    .get()
+                    .addOnSuccessListener {
 
-            if (cursor.moveToFirst()) {
-                //ir a drawer navegation
-                val intentoADrawer = Intent(this, DrawernavActivity::class.java)
-                startActivity(intentoADrawer)
-                Toast.makeText(this, "Inicio exitoso: "+cursor.getString(1).toString(), Toast.LENGTH_SHORT).show()
-            }else{
-                Toast.makeText(this, "Usuario no encontrado", Toast.LENGTH_SHORT).show()
-            }
-        }// LOGIN ----------------------------------------------------------
+                        //obtener los datos de "it"
+                        val passwBaseD = it.get("PASSWORD") as String?
+                        val nameBaseD = it.get("NAME") as String?
+                        val correoBaseD = it.get("EMAIL") as String?
+
+                        if (passwInicio == passwBaseD) {
+
+                            //ir a drawer navegation
+                            val intentoADrawer = Intent(this, DrawernavActivity::class.java)
+                            startActivity(intentoADrawer)
+                            Toast.makeText(this, "WELCOM "+nameBaseD.toString(), Toast.LENGTH_SHORT).show()
+
+                        }else { Toast.makeText(this, "Error! data incorret", Toast.LENGTH_SHORT).show() }
+                    }
+                    .addOnFailureListener{
+                        Toast.makeText(this, "User not exist in data base", Toast.LENGTH_SHORT).show()
+                    }
+
+            } else { Toast.makeText(this, "Missing data", Toast.LENGTH_SHORT).show() }
+        }// fin LOGIN --------------------------------------------------------------------------------
 
 
     }
-
 
     // A central
     fun Acentral(view: View)
@@ -59,36 +67,8 @@ class LoginActivity : AppCompatActivity() {
     {
         val intentoAregister = Intent(this, RegisterActivity::class.java)
         startActivity(intentoAregister)
-        Toast.makeText(this, "completa los datos", Toast.LENGTH_SHORT).show()
+        Toast.makeText(this, "completa los campos", Toast.LENGTH_SHORT).show()
     }
+
 
 }
-
-/*
-//funcion para inicio de sesion anterior
-fun loginAcentral(xx: View)
-{
-    var username: String = userInicio!!.text.toString()
-    var password: String = passwordInicio!!.text.toString()
-
-    val btnPositivo = { xx: DialogInterface, yy: Int ->
-        val intentoADrawer = Intent(this, DrawernavActivity::class.java)
-        startActivity(intentoADrawer)
-        Toast.makeText(this, "Inicio exitoso", Toast.LENGTH_SHORT).show()
-    }
-    val btnNegativo = { nombre1: DialogInterface, nombre2: Int ->
-        Toast.makeText(this, "Cancelaste el ingreso", Toast.LENGTH_SHORT).show()
-    }
-    if (username == "@2" && password == "22") {
-        Toast.makeText(this, "Credenciales validas", Toast.LENGTH_SHORT).show()
-        val dialog = AlertDialog.Builder(this)
-            .setTitle("Bienvenido $username")
-            .setMessage("Estas seguro de entrar?")
-            .setPositiveButton("Confirmar", btnPositivo)
-            .setNegativeButton("Cancelar", btnNegativo)
-            .create().show()
-    } else {
-        Toast.makeText(this, R.string.language_incorrect_data, Toast.LENGTH_SHORT).show()
-    }
-}
-*/

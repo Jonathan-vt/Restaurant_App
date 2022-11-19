@@ -17,13 +17,29 @@
         <Button
             android:id="@+id/buttonBase"
             android:layout_width="match_parent"
-            android:layout_height="110dp"
+            android:layout_height="0dp"
+            android:layout_weight="10"
             android:layout_margin="5dp"
-            android:text="Mostar Datos"/>
+            android:text="Mostar Datos Locales"/>
         <TextView
             android:id="@+id/textViewBase"
             android:layout_width="match_parent"
-            android:layout_height="500dp"
+            android:layout_height="0dp"
+            android:layout_weight="40"
+            android:layout_margin="5dp" />
+
+        <Button
+            android:id="@+id/buttonFirebase"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="10"
+            android:layout_margin="5dp"
+            android:text="Mostar Datos Firebase"/>
+        <TextView
+            android:id="@+id/textViewFirebase"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="40"
             android:layout_margin="5dp" />
 
     </LinearLayout>

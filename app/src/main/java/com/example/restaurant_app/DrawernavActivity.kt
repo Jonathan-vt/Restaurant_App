@@ -1,11 +1,13 @@
 package com.example.restaurant_app
 
+import android.content.DialogInterface
 import android.content.Intent
 import android.os.Bundle
 import android.view.Menu
 import android.view.MenuItem
 import android.view.View
 import android.widget.Toast
+import androidx.appcompat.app.AlertDialog
 import androidx.appcompat.app.AppCompatActivity
 import androidx.drawerlayout.widget.DrawerLayout
 import androidx.navigation.fragment.NavHostFragment
@@ -14,6 +16,7 @@ import androidx.navigation.ui.navigateUp
 import androidx.navigation.ui.setupActionBarWithNavController
 import androidx.navigation.ui.setupWithNavController
 import com.example.restaurant_app.databinding.ActivityDrawernavBinding
+import com.example.restaurant_app.databinding.ActivityLoginBinding
 import com.google.android.material.navigation.NavigationView
 
 
@@ -23,7 +26,8 @@ class DrawernavActivity : AppCompatActivity() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_drawernav)
+        binding= ActivityDrawernavBinding.inflate(layoutInflater)
+        setContentView(binding.root)
 
         setSupportActionBar(findViewById(R.id.toolbar))
 
@@ -71,12 +75,25 @@ class DrawernavActivity : AppCompatActivity() {
         }
         R.id.itm_Close->{
             Toast.makeText(this,"seleccion: Cerrar sesion", Toast.LENGTH_SHORT).show()
-            val inten = Intent(this, LoginActivity::class.java)
-            startActivity(inten)
+
+            val btnPositivo = { xx: DialogInterface, yy: Int ->
+                val inten = Intent(this, LoginActivity::class.java)
+                startActivity(inten)
+                Toast.makeText(this, "bye", Toast.LENGTH_SHORT).show()
+            }
+            val btnNegativo = { nombre1: DialogInterface, nombre2: Int ->
+                Toast.makeText(this, "Cancelaste el cierre", Toast.LENGTH_SHORT).show()
+            }
+            val dialog = AlertDialog.Builder(this)
+                .setTitle("CONFIRMACION")
+                .setMessage("¿Estas seguro que deseas salir?")
+                .setPositiveButton("Confirmar", btnPositivo)
+                .setNegativeButton("Cancelar", btnNegativo)
+                .create().show()
             true
-        }
-        else->{ super.onOptionsItemSelected(item) }
+        }else->{ super.onOptionsItemSelected(item) }
     }
+
     //funcion cerrar fracments en A
     fun cerrarfragsA(View:View){
         supportFragmentManager.findFragmentById(R.id.frag_A_container)?.let {
